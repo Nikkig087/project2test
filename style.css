@@ -1,0 +1,111 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-image: url('flintstones_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: none;
+}
+
+
+.gameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: none;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    overflow: none;
+}
+
+.header img {
+    width: 200px;
+}
+
+.form {
+    background-color: beige;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Use the full height of the viewport */
+}
+
+.hidden {
+    display: none;
+}
+
+form {
+    margin-bottom: 20px;
+}
+.user-info {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #664c37;
+}
+
+input[type="text"] {
+    width: 200px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #664c37;
+}
+
+button {
+    background-color: #8b4513;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #a0522d;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#attempts {
+    font-style: italic;
+}
+
+#characterImage {
+    margin-bottom: 20px;
+}

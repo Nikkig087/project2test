@@ -1,47 +1,39 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Flintstones Number Guessing Game</title>
-
-<style>
-
- body {
-
-font-family: Arial, sans-serif;
-
-text-align: center;
-
- }
-
- #container {
-
- margin-top: 50px;
-
-}
-
-</style>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flintstones Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <div class="container" id="loginContainer">
+        <div class="header">
+            <img src="bedrock_logo.png" alt="Bedrock Logo">
+            <h1>Flintstones Guessing Game</h1>
+        </div>
+        <form id="usernameForm" class="form">
+            <label for="username">Enter your username:</label>
+            <input type="text" id="usernameInput" placeholder="Username" required>
+            <button type="submit">Start Game</button>
+        </form>
+    
 
-<div id="container">
- <h1>Flintstones Number Guessing Game</h1>
-
-<label for="username">Enter your name:</label>
-<input type="text" id="username" required>
-<button onclick="startGame()">Start Game</button>
-
-</div>
-
-<script src="flinstones.js"></script>
+        <div id="gameContainer" class="gameContainer">
+          
+            <div id="loggedInUser" class="user-info"></div>
+            <div id="gameArea" class="hidden">
+                <img id="characterImg" src="" alt="Character Image">
+        <form id="guessForm" class="form">
+            <label for="guessInput">Guess the character's name:</label>
+            <input type="text" id="guessInput" placeholder="Enter your guess..." required>
+            <button type="submit">Check</button>
+        </form>
+            <p id="message"></p>
+            <p id="attempts"></p>
+            <p id="correctAnswers"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
-
 </html>
