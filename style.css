@@ -1,42 +1,37 @@
 body {
     font-family: 'Comic Sans MS', cursive, sans-serif;
-    background-image: url('flintstones_bg.jpg');
-    background-repeat: no-repeat;
+   /* background-image: url('flintstones_bg.jpg');
+    background-repeat: no-repeat;*/
+    background-color: burlywood;
     background-size: cover;
     margin: 0;
     padding: 0;
+    height: 80vh;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: none;
-}
+    margin: 0;
+   
+    
 
-
-.gameContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: none;
 }
 
 .header {
     text-align: center;
     margin-bottom: 20px;
+    width: 100%;
+    flex-direction: column;
     display: flex;
-    flex-direction: row;
-    padding-top: 50px;
-    overflow: none;
+    justify-content: center;
+    padding: 20px;
 }
 
 .header img {
-    width: 200px;
+    width: 100px;
+    display: block;
 }
 
 .form {
@@ -44,15 +39,15 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
-    max-width: 600px;
+    max-width: 550px;
+    width: auto;
 }
 
 .form-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh; /* Use the full height of the viewport */
+    width: auto;
 }
 
 .hidden {
@@ -62,12 +57,6 @@ body {
 form {
     margin-bottom: 20px;
 }
-.user-info {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
 
 label {
     display: inline-block;
@@ -93,6 +82,19 @@ button {
     border-radius: 5px;
 }
 
+#loggedInUser {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#quitGame {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+}
+
+
 button:hover {
     background-color: #a0522d;
 }
@@ -106,6 +108,137 @@ button:hover {
     font-style: italic;
 }
 
-#characterImage {
-    margin-bottom: 20px;
+#characterImg {
+   
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    padding-bottom: 5%;
 }
+
+
+#gameContainer {
+    display: flex;
+ 
+  
+}
+
+
+/* --------- Media queries */
+@media (max-width: 414px) {
+    /* Remove height property from body */
+    body {
+        height: 100vh;
+    }
+
+    /* Remove height property from container */
+    .container {
+        height: auto;
+    }
+
+    form#guessForm {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* Adjust the position of the Quit button */
+    #quitGame {
+        position: static; /* Reset position */
+        margin-bottom: 20px; /* Adjust margin-top */
+    }
+
+    /* Ensure background image covers the entire container */
+    body, .container {
+        background-size: cover;
+    }
+
+    /* Other existing rules remain unchanged */
+    .loginContainer {
+        flex-direction: column;
+        align-items: center;
+      
+    }
+
+    #gameContainer {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 10px 0;
+    }
+
+    #loggedInUser {
+        margin-bottom: 20px;
+    }
+
+    #guessForm.form {
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+/*
+    .btn--big::after {
+        font-size: 0.6rem;
+        left: -0.7rem;
+    }
+
+    .question-area {
+        padding: 10% 0;
+        width: 100%;
+    }
+
+    .question-area span {
+        padding: 0;
+    }
+
+    .answer-message {
+        display: block;
+    }
+
+    #answer-box {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .btn--gray {
+        margin-top: 0;
+    }
+
+    .score-area {
+        width: 100%;
+    }
+
+    .scores {
+        margin: 0.5em auto;
+        display: block;
+        padding: 5px;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .game-area {
+        height: 70vh;
+    }
+
+    .controls-area {
+        width: 75%;
+        margin: 10px auto;
+    }
+
+    .btn--big {
+        margin: 10px 10px;
+    }
+
+    .question-area {
+        padding: 10px 0;
+    }
+
+}
+*/

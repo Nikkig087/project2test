@@ -5,13 +5,13 @@ let currentCharacter;
 
 function displayCharacter() {
     const characters = [
-        { name: "Fred", image: "fred.png" },
-        { name: "Wilma", image: "wilma.png" },
-        { name: "Barney", image: "barney.png" },
-        { name: "Betty", image: "betty.png" },
-        { name: "Pebbles", image: "pebbles.png" },
-        { name: "Bamm-Bamm", image: "bamm-bamm.png" },
-        { name: "Dino", image: "dino.png" }
+        { name: "Fred", image: "apple-touch-icon.png" },
+        { name: "Wilma", image: "apple-touch-icon.png"  },
+        { name: "Barney", image:"apple-touch-icon.png"  },
+        { name: "Betty", image: "apple-touch-icon.png" },
+        { name: "Pebbles", image: "apple-touch-icon.png"  },
+        { name: "Bamm-Bamm", image: "apple-touch-icon.png"  },
+        { name: "Dino", image:"apple-touch-icon.png"  }
     ];
     currentCharacter = characters[Math.floor(Math.random() * characters.length)];
     document.getElementById("characterImg").src = currentCharacter.image;
@@ -26,6 +26,7 @@ function startGame(event) {
         document.getElementById("usernameForm").classList.add("hidden");
         document.getElementById("gameContainer").classList.remove("hidden"); // Show game container
         document.getElementById("gameArea").classList.remove("hidden"); // Show game area
+        document.getElementById("quitGame").classList.remove("hidden"); // Show quit button area
         totalAttempts = 0;
         correctAnswers = 0; // Reset correct answers counter
         displayCharacter(); // Display character image
@@ -54,11 +55,38 @@ function gameOver() {
         document.getElementById("loginContainer").classList.remove("hidden");
         document.getElementById("gameContainer").classList.add("hidden");
         document.getElementById("gameArea").classList.add("hidden"); // Hide game area
+        document.getElementById("quitGame").classList.add("hidden"); // Hide game area
         document.getElementById("usernameForm").classList.remove("hidden"); // Show login form
     }
 }
 
-
+function quitGame(){
+   
+    
+    let endGame = confirm("Are you sure you want to quit?");
+    if (endGame){
+        
+        totalAttempts = 0; // Reset total attempts counter
+        correctAnswers = 0; // Reset correct answers counter
+        document.getElementById("guessInput").value = ""; // Clear the guess input box
+        document.getElementById("message").textContent = "";
+        document.getElementById("attempts").textContent = ""; // Clear attempts display
+        document.getElementById("correctAnswers").textContent = ""; // Clear correct answers display
+        document.getElementById("usernameInput").value = "";
+        document.getElementById("loginContainer").classList.remove("hidden");
+        document.getElementById("gameContainer").classList.add("hidden");
+        document.getElementById("gameArea").classList.add("hidden"); // Hide game area
+        document.getElementById("quitGame").classList.add("hidden"); // Hide quit game
+        document.getElementById("usernameForm").classList.remove("hidden"); // Show login form
+    } else {
+     
+        document.getElementById("guessInput").value = "";
+        document.getElementById("message").textContent = "";
+       // document.getElementById("attempts").textContent = "Number of attempts: 0"; // Reset attempts display
+       // document.getElementById("correctAnswers").textContent = "";
+        displayCharacter(); // Display new character image
+    }
+}
 
 function checkGuess() {
     const guessInput = document.getElementById("guessInput");
@@ -96,6 +124,12 @@ document.getElementById("guessForm").addEventListener("submit", function(event) 
     event.preventDefault();
     checkGuess();
 });
+
+document.getElementById("quitGame").addEventListener("click", function(){
+   
+    quitGame();
+
+})
 
 // Hide game area on page load
 window.onload = function() {
