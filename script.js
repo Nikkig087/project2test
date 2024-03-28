@@ -65,7 +65,6 @@ function quitGame(){
     
     let endGame = confirm("Are you sure you want to quit?");
     if (endGame){
-        
         totalAttempts = 0; // Reset total attempts counter
         correctAnswers = 0; // Reset correct answers counter
         document.getElementById("guessInput").value = ""; // Clear the guess input box
@@ -76,7 +75,7 @@ function quitGame(){
         document.getElementById("loginContainer").classList.remove("hidden");
         document.getElementById("gameContainer").classList.add("hidden");
         document.getElementById("gameArea").classList.add("hidden"); // Hide game area
-        document.getElementById("quitGame").classList.add("hidden"); // Hide quit game
+        document.getElementById("quitGame").classList.add("hidden"); // Hide game area
         document.getElementById("usernameForm").classList.remove("hidden"); // Show login form
     } else {
      
@@ -137,4 +136,3 @@ window.onload = function() {
 };
 
 document.getElementById("usernameForm").addEventListener("submit", startGame);
-
