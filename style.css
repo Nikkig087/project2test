@@ -124,18 +124,24 @@ button:hover {
 
 
 /* --------- Media queries */
-@media (max-width: 414px) {
+@media screen and (max-width: 768px) and (min-width: 300px){
     html, body {
-        min-height: 105vh;
+        height: 100%;
         margin: 0;
         padding: 0;
-        
-    }
-    body {
+        width: auto;
         background-image: url(mobile-background.jpg);
         background-repeat: no-repeat;
-       
+        overflow: hidden;
+        
     }
+
+    .header {
+        margin: 10% 0 10% 0;
+        padding-bottom: 0;
+    }
+       
+
     /* Other existing rules remain unchanged */
 
 
@@ -183,7 +189,7 @@ button:hover {
     }
 
     #usernameForm.form {
-        width: 60%;
+        width: 80%;
         margin: 0 auto; /* Center horizontally */
         text-align: center; /* Center text */
     }
@@ -191,17 +197,14 @@ button:hover {
 
 
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     html, body {
-        min-height: 105vh;
+        height: 100%;
         margin: 0;
         padding: 0;
-        
-        
-    }
-    body {
-        background-image: url(mobile-background.jpg);
+        background-image: url(background-image.jpg);
         background-repeat: no-repeat;
+        overflow: hidden;
         
        
     }
@@ -253,7 +256,7 @@ button:hover {
     }
 
     #usernameForm.form {
-        width: 60%;
+        width: 70%;
         margin: 0 auto; /* Center horizontally */
         text-align: center; /* Center text */
     }
