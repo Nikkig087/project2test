@@ -5,13 +5,13 @@ let currentCharacter;
 
 function displayCharacter() {
     const characters = [
-        { name: "Fred", image: "apple-touch-icon.png" },
+        { name: "Bart", image: "bart.png" }/*,
         { name: "Wilma", image: "apple-touch-icon.png"  },
         { name: "Barney", image:"apple-touch-icon.png"  },
         { name: "Betty", image: "apple-touch-icon.png" },
         { name: "Pebbles", image: "apple-touch-icon.png"  },
         { name: "Bamm-Bamm", image: "apple-touch-icon.png"  },
-        { name: "Dino", image:"apple-touch-icon.png"  }
+        { name: "Dino", image:"apple-touch-icon.png"  }*/
     ];
     currentCharacter = characters[Math.floor(Math.random() * characters.length)];
     document.getElementById("characterImg").src = currentCharacter.image;

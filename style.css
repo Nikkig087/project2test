@@ -1,12 +1,11 @@
 html, body {
     font-family: 'Comic Sans MS', cursive, sans-serif;
-   background-image: url('background-image.jpg');
+    background-image: url('background-image.jpg');
     background-repeat: no-repeat;
-    
     background-size: cover;
     margin: 0;
     padding: 0;
-    height: 80vh;
+    height: 100vh; /* Set height to cover entire viewport */
 }
 
 .container {
@@ -14,10 +13,10 @@ html, body {
     flex-direction: column;
     align-items: center;
     margin: 0;
-   
-    
-
 }
+
+/* Other CSS rules remain unchanged */
+
 
 .header {
     text-align: center;
@@ -26,12 +25,12 @@ html, body {
     flex-direction: column;
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 0px;
 }
 
 .header img {
     width: 100px;
-    display: block;
+    display: inline;
 }
 
 .form {
@@ -102,6 +101,7 @@ button:hover {
 #message {
     margin-top: 20px;
     font-size: 18px;
+    padding: 0 5px;
 }
 
 #attempts {
@@ -124,20 +124,26 @@ button:hover {
 
 
 /* --------- Media queries */
-@media screen and (max-width: 768px) and (min-width: 300px){
+@media screen and (max-width: 600px){
     html, body {
-        height: 100%;
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        background-image: url('mobile-background.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
         margin: 0;
         padding: 0;
-        width: auto;
-        background-image: url(mobile-background.jpg);
-        background-repeat: no-repeat;
-        overflow: hidden;
-        
+        height: 140vh; /* Set height to cover entire viewport */
     }
+    
+    .gameContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }}
 
     .header {
-        margin: 10% 0 10% 0;
+        margin: 0;
         padding-bottom: 0;
     }
        
@@ -199,12 +205,12 @@ button:hover {
 
 @media (min-width: 768px) {
     html, body {
-        height: 100%;
+        height: 120vh;
         margin: 0;
         padding: 0;
         background-image: url(background-image.jpg);
         background-repeat: no-repeat;
-        overflow: hidden;
+       
         
        
     }
@@ -213,11 +219,7 @@ button:hover {
 
 
 
-    form#guessForm {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
+   
 
     /* Adjust the position of the Quit button */
     #quitGame {
@@ -251,7 +253,7 @@ button:hover {
     }
 
     #guessForm.form {
-        width: 85%;
+        width: 100%;
         margin: 0 auto;
     }
 
