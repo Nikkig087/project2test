@@ -1,8 +1,8 @@
-body {
+html, body {
     font-family: 'Comic Sans MS', cursive, sans-serif;
-   /* background-image: url('flintstones_bg.jpg');
-    background-repeat: no-repeat;*/
-    background-color: burlywood;
+   background-image: url('background-image.jpg');
+    background-repeat: no-repeat;
+    
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -125,15 +125,21 @@ button:hover {
 
 /* --------- Media queries */
 @media (max-width: 414px) {
-    /* Remove height property from body */
+    html, body {
+        min-height: 105vh;
+        margin: 0;
+        padding: 0;
+        
+    }
     body {
-        height: 100vh;
+        background-image: url(mobile-background.jpg);
+        background-repeat: no-repeat;
+       
     }
+    /* Other existing rules remain unchanged */
 
-    /* Remove height property from container */
-    .container {
-        height: auto;
-    }
+
+
 
     form#guessForm {
         display: flex;
@@ -147,7 +153,7 @@ button:hover {
         margin-bottom: 20px; /* Adjust margin-top */
     }
 
-    /* Ensure background image covers the entire container */
+    /* Ensure background image covers the entire container *
     body, .container {
         background-size: cover;
     }
@@ -156,14 +162,15 @@ button:hover {
     .loginContainer {
         flex-direction: column;
         align-items: center;
-      
+        flex-wrap: wrap;
+        margin: 0;
     }
 
     #gameContainer {
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
-        margin: 10px 0;
+        margin: 0;
     }
 
     #loggedInUser {
@@ -174,9 +181,83 @@ button:hover {
         width: 85%;
         margin: 0 auto;
     }
+
+    #usernameForm.form {
+        width: 60%;
+        margin: 0 auto; /* Center horizontally */
+        text-align: center; /* Center text */
+    }
 }
 
 
+
+@media (max-width: 768px) {
+    html, body {
+        min-height: 105vh;
+        margin: 0;
+        padding: 0;
+        
+        
+    }
+    body {
+        background-image: url(mobile-background.jpg);
+        background-repeat: no-repeat;
+        
+       
+    }
+    /* Other existing rules remain unchanged */
+
+
+
+
+    form#guessForm {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* Adjust the position of the Quit button */
+    #quitGame {
+        position: static; /* Reset position */
+        margin-bottom: 20px; /* Adjust margin-top */
+    }
+
+    /* Ensure background image covers the entire container *
+    body, .container {
+        background-size: cover;
+    }
+
+    /* Other existing rules remain unchanged */
+    .loginContainer {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    #gameContainer {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    #loggedInUser {
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    #guessForm.form {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    #usernameForm.form {
+        width: 60%;
+        margin: 0 auto; /* Center horizontally */
+        text-align: center; /* Center text */
+    }
+}
 
 
 /*
