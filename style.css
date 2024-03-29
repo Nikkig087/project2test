@@ -1,6 +1,6 @@
 html, body {
     font-family: 'Comic Sans MS', cursive, sans-serif;
-    background-image: url('background-image.jpg');
+    background-image: url('game_page_background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -33,11 +33,26 @@ html, body {
     display: inline;
 }
 
+#gameArea{
+    background-color: beige;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    opacity: 0.8;
+}
 .form {
     background-color: beige;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+    max-width: 550px;
+    width: auto;
+}
+
+.guessform {
+    
+    padding: 20px;
+
     max-width: 550px;
     width: auto;
 }
