@@ -5,8 +5,8 @@ let currentCharacter;
 
 function displayCharacter() {
     const characters = [
-        { name: "Bart", image: "bart.png" }/*,
-        { name: "Wilma", image: "apple-touch-icon.png"  },
+        { name: "Bart", image: "bart.png" },
+        { name: "Sonic", image: "sonic.png"  }/*,
         { name: "Barney", image:"apple-touch-icon.png"  },
         { name: "Betty", image: "apple-touch-icon.png" },
         { name: "Pebbles", image: "apple-touch-icon.png"  },
@@ -61,6 +61,7 @@ function gameOver() {
         document.getElementById("usernameForm").classList.remove("hidden"); // Show login form
         document.getElementById("gameHead ").classList.add("hidden"); // 
         document.getElementById("header").classList.remove("hidden");
+        document.getElementById("loggedInUser").classList.add("hidden");
     }
 }
 
@@ -83,6 +84,7 @@ function quitGame(){
         document.getElementById("usernameForm").classList.remove("hidden"); // Show login form
         document.getElementById("gameHead ").classList.add("hidden"); // 
         document.getElementById("header").classList.remove("hidden");
+        document.getElementById("loggedInUser").classList.add("hidden");
     } else {
      
         document.getElementById("guessInput").value = "";
@@ -90,6 +92,7 @@ function quitGame(){
        // document.getElementById("attempts").textContent = "Number of attempts: 0"; // Reset attempts display
        // document.getElementById("correctAnswers").textContent = "";
         displayCharacter(); // Display new character image
+        
     }
 }
 
@@ -103,9 +106,16 @@ function checkGuess() {
     
     if (guess.toLowerCase() === correctCharacter) {
         message.textContent = `Congratulations, ${username}! You guessed it right!`;
-        guessInput.value = "";
+        setTimeout(function() {
+            // Inside the setTimeout function, call displayCharacter
+            displayCharacter();
+            guessInput.value = ""; // Reset the guess input
+            document.getElementById("message").textContent = "";
+            document.getElementById("attempts").textContent = ""; // Clear attempts display
+            document.getElementById("correctAnswers").textContent = ""; // Clear correct answers display
+        }, 2000);
         correctAnswers++; // Increment correct answers counter
-        displayCharacter(); // Change picture only after correct guess
+        
     } else {
         totalAttempts++;
         message.textContent = `Wrong guess, ${username}! Try again.`;
