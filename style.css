@@ -132,7 +132,7 @@ button:hover {
         background-size: cover;
         margin: 0;
         padding: 0;
-        height: 140vh; /* Set height to cover entire viewport */
+        height: 100%
     }
     
     .gameContainer {
@@ -176,6 +176,7 @@ button:hover {
         align-items: center;
         flex-wrap: wrap;
         margin: 0;
+    
     }
 
     #gameContainer {

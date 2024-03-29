@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flintstones Guessing Game</title>
+    <title>Who am I??</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="loginContainer" class="container ">
-        <div class="header">
+        <div class="header" id="header">
             <img src="apple-touch-icon.png" alt="Bedrock Logo">
-            <h1>Flintstones Guessing Game</h1>
+            <h1>Welcome</h1>
         </div>
         <div class="loginContainer">
         <form id="usernameForm" class="form">
@@ -21,6 +21,11 @@
     </div>
 
         <div id="gameContainer" class="gameContainer">
+            <div class="header hidden" id="gameHead ">
+                <img src="apple-touch-icon.png" alt="Bedrock Logo">
+                <h1>Who Am I??</h1>
+            </div>
+          
           
             <div id="loggedInUser" class="user-info"></div>
             <div id="quitGame" class="hidden">
