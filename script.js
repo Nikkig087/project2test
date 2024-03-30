@@ -27,6 +27,7 @@ function startGame(event) {
         totalAttempts = 0;
         correctAnswers = 0; // Reset correct answers counter
         displayCharacter(); // Display character image
+        
     } else {
         
         alert("Please enter a username.");
@@ -94,7 +95,7 @@ function quitGame() {
         correctAnswers = 0; // Reset correct answers counter
         document.getElementById("message").textContent = "";
         document.getElementById("attempts").textContent = "";
-        document.getElementById("correctAnswers").textContent = ""; // Clear correct answers display
+        //document.getElementById("correctAnswers").textContent = ""; // Clear correct answers display
         document.getElementById("usernameInput").value = "";
         document.getElementById("loginContainer").classList.remove("hidden");
         document.getElementById("gameContainer").classList.add("hidden");

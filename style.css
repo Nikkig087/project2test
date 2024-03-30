@@ -115,10 +115,18 @@ button {
     right: 20px;
 }
 
-#quitGame {
-    position: absolute;
-    top: 60px;
-    right: 20px;
+button#quitGame {
+    
+        background-color: #8b4513;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        margin-top: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        /*position: static;*/
+        
+    
 }
 
 
@@ -187,15 +195,22 @@ button:hover {
 
 
     form#guessForm {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+      
+        align-content: center;
+        
     }
 
-    /* Adjust the position of the Quit button */
+    .button-area {
+        flex-direction: row;
+        display: flex;
+        
+        justify-content: space-evenly;
+    }
+
+    /* Adjust the position of the Quit button *
     #quitGame {
-        position: static; /* Reset position */
-        margin-bottom: 20px; /* Adjust margin-top */
+        position: static; /* Reset position *
+        margin-bottom: 20px; /* Adjust margin-top *
     }
 
     /* Ensure background image covers the entire container *
@@ -255,9 +270,9 @@ button:hover {
 
    
 
-    /* Adjust the position of the Quit button */
+    /* Adjust the position of the Quit button *
     #quitGame {
-        position: static; /* Reset position */
+        position: static; /* Reset position *
         margin-bottom: 20px; /* Adjust margin-top */
     }
 

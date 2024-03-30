@@ -37,9 +37,11 @@
                     <label for="guessA">Bart</label><br>
                     <input type="radio" id="guessB" name="character" value="Sonic">
                     <label for="guessB">Sonic</label><br>
-                    <button type="submit">Check</button>
+                    <div class="button-area">
+                    <button type="submit">Check</button> <button id="quitGame" class="hidden">Quit</button>
+                    </div>
                 </form>
-                <button id="quitGame" class="hidden">Quit</button>
+             
                 <p id="message"></p>
                 <p id="attempts"></p>
                 <p id="correctAnswers"></p>
