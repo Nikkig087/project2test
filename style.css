@@ -56,6 +56,19 @@ html, body {
     max-width: 550px;
     width: auto;
 }
+/* Adjustments to the labels and radio buttons */
+#guesForm label {
+    display: flex;
+    align-items: center;
+}
+
+#guesForm input[type="radio"] {
+    margin-right: 5px; /* Adjust as needed for spacing between the radio button and the word */
+}
+
+#guesForm span {
+    margin-right: 15px; /* Adjust as needed for spacing between the word and the next radio button */
+}
 
 .form-container {
     display: flex;
@@ -136,6 +149,11 @@ button:hover {
  
   
 }
+#options label {
+    display: block;
+    margin-bottom: 10px; /* Adjust as needed for spacing between options */
+}
+
 
 
 /* --------- Media queries */
