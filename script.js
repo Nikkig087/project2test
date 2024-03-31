@@ -17,6 +17,13 @@ function startGame(event) {
     event.preventDefault(); // Prevent the default form submission behavior
     username = document.getElementById("usernameInput").value.trim();
     if (username) {
+        Swal.fire({
+            title: 'Game Rules',
+            html: `${username} for each guess you have Three attempts at the correct answer. <br>Three incorrect guesses for a single Character and its Game Over!!!`,
+            icon: 'info',
+            confirmButtonText: 'Lets Go!!!',
+            allowHtml: true // Enable HTML interpretation
+          });
         document.getElementById("loggedInUser").textContent = `Logged in as: ${username}`;
         document.getElementById("usernameForm").classList.add("hidden");
         document.getElementById("gameContainer").classList.remove("hidden"); // Show game container
