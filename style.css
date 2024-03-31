@@ -39,6 +39,7 @@ html, body {
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
     padding: 20px;
     opacity: 0.8;
+    width: 18%;
 }
 .form {
     background-color: beige;
@@ -135,7 +136,8 @@ button:hover {
 }
 
 #message {
-    margin-top: 20px;
+
+    margin-top: 10px;
     font-size: 18px;
     padding: 0 5px;
 }
@@ -161,6 +163,7 @@ button:hover {
     display: block;
     margin-bottom: 10px; /* Adjust as needed for spacing between options */
 }
+
 
 
 

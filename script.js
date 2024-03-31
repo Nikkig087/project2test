@@ -26,7 +26,13 @@ function startGame(event) {
         document.getElementById("header").classList.add("hidden");
         totalAttempts = 0;
         correctAnswers = 0; // Reset correct answers counter
+        
+        document.getElementById("message").textContent = "";
+        document.getElementById("attempts").textContent = "";
+        document.getElementById("correctAnswers").textContent = ""; // Clear correct answers display
+        document.querySelectorAll('input[name="character"]').forEach(input => input.checked = false);
         displayCharacter(); // Display character image
+    
         
     } else {
         
@@ -38,6 +44,9 @@ function checkGuess() {
     const guess = document.querySelector('input[name="character"]:checked');
     const message = document.getElementById("message");
     const attemptsDisplay = document.getElementById("attempts");
+  
+   
+
 
     if (guess && guess.value.toLowerCase() === currentCharacter.name.toLowerCase()) {
         message.textContent = `Congratulations, ${username}! You guessed it right!`;
@@ -45,19 +54,22 @@ function checkGuess() {
             displayCharacter(); // Display new character image
             message.textContent = "";
             attemptsDisplay.textContent = ""; // Clear attempts display
-            correctAnswers++;
+
+            
         }, 2000);
+        correctAnswers++;
+        totalAttempts=0;
     } else {
         totalAttempts++;
         message.textContent = `Wrong guess, ${username}! Try again.`;
-        attemptsDisplay.textContent = `Number of attempts: ${totalAttempts}`;
+        attemptsDisplay.textContent = `Number of incorrect attempts: ${totalAttempts}`;
         if (totalAttempts >= 3) {
             gameOver();
             return; // Stop further execution
         }
     }
 
-    // Display correct answers count
+    //Display correct answers count
     document.getElementById("correctAnswers").textContent = `Correct answers: ${correctAnswers}`;
 }
 
@@ -66,6 +78,7 @@ function gameOver() {
     if (playAgain) {
         totalAttempts = 0;
         correctAnswers = 0;
+        document.getElementById("correctAnswers").textContent = ""; // Clear correct answers display
         document.getElementById("message").textContent = "";
         document.getElementById("attempts").textContent = "";
         document.querySelectorAll('input[name="character"]').forEach(input => input.checked = false);
@@ -89,13 +102,13 @@ function gameOver() {
 }
 
 function quitGame() {
-    let endGame = confirm("Are you sure you want to quit?");
+    const endGame = confirm("Are you sure you want to quit?");
     if (endGame) {
         totalAttempts = 0; // Reset total attempts counter
         correctAnswers = 0; // Reset correct answers counter
         document.getElementById("message").textContent = "";
         document.getElementById("attempts").textContent = "";
-        //document.getElementById("correctAnswers").textContent = ""; // Clear correct answers display
+        document.getElementById("correctAnswers").textContent = ""; // Clear correct answers display
         document.getElementById("usernameInput").value = "";
         document.getElementById("loginContainer").classList.remove("hidden");
         document.getElementById("gameContainer").classList.add("hidden");
@@ -105,7 +118,7 @@ function quitGame() {
         document.getElementById("gameHead ").classList.add("hidden"); // 
         document.getElementById("header").classList.remove("hidden");
         document.getElementById("loggedInUser").classList.add("hidden");
-    } else {      document.getElementById("message").textContent = "";
+    }else {      document.getElementById("message").textContent = "";
     // document.getElementById("attempts").textContent = "Number of attempts: 0"; // Reset attempts display
     // document.getElementById("correctAnswers").textContent = "";
      displayCharacter(); // Display new character image
@@ -118,7 +131,8 @@ document.getElementById("usernameForm").addEventListener("submit", function(even
     event.preventDefault();
     startGame();
 });
-document.getElementById("usernameForm").addEventListener("submit", startGame);
+/*
+document.getElementById("usernameForm").addEventListener("submit", startGame);*/
 document.getElementById("guessForm").addEventListener("submit", function(event) {
     event.preventDefault();
     checkGuess();
