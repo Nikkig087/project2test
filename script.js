@@ -15,14 +15,14 @@ function displayCharacter() {
 
 function startGame(event) {
     event.preventDefault(); // Prevent the default form submission behavior
-    username = document.getElementById("usernameInput").value.trim();
+    const username = document.getElementById("usernameInput").value.trim();
     if (username) {
         Swal.fire({
             title: 'Game Rules',
             html: `${username} for each guess you have Three attempts at the correct answer. <br>Three incorrect guesses for a single Character and its Game Over!!!`,
             icon: 'info',
             confirmButtonText: 'Lets Go!!!',
-            allowHtml: true // Enable HTML interpretation
+           
           });
         document.getElementById("loggedInUser").textContent = `Logged in as: ${username}`;
         document.getElementById("usernameForm").classList.add("hidden");
@@ -33,7 +33,7 @@ function startGame(event) {
         document.getElementById("header").classList.add("hidden");
         totalAttempts = 0;
         correctAnswers = 0; // Reset correct answers counter
-        
+        document.getElementById("loggedInUser").classList.remove("hidden");
         document.getElementById("message").textContent = "";
         document.getElementById("attempts").textContent = "";
         document.getElementById("correctAnswers").textContent = ""; // Clear correct answers display
@@ -53,7 +53,7 @@ function checkGuess() {
     const attemptsDisplay = document.getElementById("attempts");
   
    
-
+    const username = document.getElementById("usernameInput").value.trim();
 
     if (guess && guess.value.toLowerCase() === currentCharacter.name.toLowerCase()) {
         message.textContent = `Congratulations, ${username}! You guessed it right!`;
@@ -82,9 +82,11 @@ function checkGuess() {
 
 function gameOver() {
     const playAgain = confirm("Bam Bam! You're out. Do you want to play again?");
+    
     if (playAgain) {
         totalAttempts = 0;
         correctAnswers = 0;
+    
         document.getElementById("correctAnswers").textContent = ""; // Clear correct answers display
         document.getElementById("message").textContent = "";
         document.getElementById("attempts").textContent = "";
@@ -105,17 +107,21 @@ function gameOver() {
         document.getElementById("gameHead ").classList.add("hidden"); // 
         document.getElementById("header").classList.remove("hidden");
         document.getElementById("loggedInUser").classList.add("hidden");
+        
     }
 }
 
 function quitGame() {
+    
     const endGame = confirm("Are you sure you want to quit?");
+    
     if (endGame) {
         totalAttempts = 0; // Reset total attempts counter
         correctAnswers = 0; // Reset correct answers counter
         document.getElementById("message").textContent = "";
         document.getElementById("attempts").textContent = "";
         document.getElementById("correctAnswers").textContent = ""; // Clear correct answers display
+        
         document.getElementById("usernameInput").value = "";
         document.getElementById("loginContainer").classList.remove("hidden");
         document.getElementById("gameContainer").classList.add("hidden");
@@ -125,7 +131,8 @@ function quitGame() {
         document.getElementById("gameHead ").classList.add("hidden"); // 
         document.getElementById("header").classList.remove("hidden");
         document.getElementById("loggedInUser").classList.add("hidden");
-    }else {      document.getElementById("message").textContent = "";
+    }else {
+       
     // document.getElementById("attempts").textContent = "Number of attempts: 0"; // Reset attempts display
     // document.getElementById("correctAnswers").textContent = "";
      displayCharacter(); // Display new character image
