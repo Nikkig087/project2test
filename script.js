@@ -81,9 +81,17 @@ function checkGuess() {
 }
 
 function gameOver() {
-    const playAgain = confirm("Bam Bam! You're out. Do you want to play again?");
-    
-    if (playAgain) {
+    //const playAgain = confirm("Bam Bam! You're out. Do you want to play again?");
+    const username = document.getElementById("usernameInput").value.trim();
+    Swal.fire({
+        title: 'Game Rules',
+        html: `${username} your out<br>do you want to play again?`,
+        icon: 'error',
+        showCancelButton: true,
+        confirmButtonText: 'Yes',
+        cancelButtonText: 'No'
+    }).then((result) => {
+        if (result.isConfirmed) {
         totalAttempts = 0;
         correctAnswers = 0;
     
@@ -109,6 +117,7 @@ function gameOver() {
         document.getElementById("loggedInUser").classList.add("hidden");
         
     }
+});
 }
 
 function quitGame() {
