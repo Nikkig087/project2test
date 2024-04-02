@@ -1,8 +1,12 @@
+/* jshint esversion: 6 */
+
+
 let lifes = 3;
 let correctAnswers = 0;
 let username;
 let currentCharacter;
 let previousCharacter;
+
 
 function displayCharacter() {
     const characters = [
@@ -28,7 +32,7 @@ function startGame(event) {
      username = document.getElementById("usernameInput").value.trim();
     const capitalizedUsername = username.charAt(0).toUpperCase() + username.slice(1);
     if (username) {
-        Swal.fire({
+        swal.fire({
             title: 'Game Rules',
             html: `${capitalizedUsername} for each Character Image to guess you have three lifes. <br>Loose all your life's for that guess and its Game Over!!!`,
             icon: 'info',
@@ -92,7 +96,7 @@ function gameOver() {
     //const playAgain = confirm("Bam Bam! You're out. Do you want to play again?");
     username = document.getElementById("usernameInput").value.trim();
     const capitalizedUsername = username.charAt(0).toUpperCase() + username.slice(1);
-    Swal.fire({
+    swal.fire({
         title: 'Game Over',
         html: `${capitalizedUsername} your out, your score was ${correctAnswers} <br>do you want to play again?`,
         icon: 'error',
@@ -132,7 +136,7 @@ function gameOver() {
 function quitGame() {
     username = document.getElementById("usernameInput").value.trim();
     const capitalizedUsername = username.charAt(0).toUpperCase() + username.slice(1);
-    Swal.fire({
+    swal.fire({
         title: 'Give Up??',
         html: `${capitalizedUsername} Are you sure you want to quit?`,
         icon: 'question',
