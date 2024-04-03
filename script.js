@@ -145,8 +145,11 @@ function quitGame() {
         cancelButtonText: 'No'
     }).then((result) => {
         if (result.isConfirmed) {
+            
             lifes = 3; // 
-            correctAnswers = 0; 
+            correctAnswers = 0;
+           
+            
             document.getElementById("message").textContent = "";
             document.getElementById("attempts").textContent = "";
             document.getElementById("correctAnswers").textContent = ""; 

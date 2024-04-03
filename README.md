@@ -14,7 +14,7 @@ In this section, you should go over the different parts of your project, and des
 ### Existing Features
 
 - **Username Entry**: Featured prominently on the landing page, users are prompted to enter their username to begin the game.
-  - This feature ensures personalized gameplay experience and allows players to track their progress.
+  - This feature ensures personalized gameplay experience including personalized messages.
 - **Character Guessing**: Users are presented with an image of a character from some well known cartoon series's and are prompted to guess the character's name.
   - This feature engages users by testing their knowledge of the iconic characters from the series.
 - **Game Messages**: Informative messages are displayed to guide users through the gameplay and provide feedback on their guesses.
@@ -46,11 +46,11 @@ Character Repetition: Initially, there was an issue where characters could repea
 ![New Character Loop](docs/images/newCharacter-loop.png)
 
 
-Quit Button Functionality: Implementing the quit button to return to the login screen posed a challenge initially. However, thorough testing and debugging resolved this issue, and now the quit button functions as intended.
+Quit Button Functionality: Implementing the quit button to return to the login screen was a challenge initially. However, thorough testing and debugging resolved this issue, and now the quit button function resets all relevant game variables and UI elements to their initial states, effectively restarting the game.
 
-### Bugs
 
-There are no known bugs in the application.
+![Quit Game Functionality](docs/images/quitGame.png)
+
 
 ### Validator Testing 
 
@@ -61,7 +61,7 @@ There are no known bugs in the application.
 
 ### Unfixed Bugs
 
-You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
+There are no known bugs in the application.
 
 ## Deployment
 
