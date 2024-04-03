@@ -72,6 +72,7 @@ function checkGuess() {
     if (guess && guess.value.toLowerCase() === currentCharacter.toLowerCase()) {
         message.textContent = `Congratulations, ${capitalizedUsername}! You guessed it right!`;
         setTimeout(function() {
+            document.querySelectorAll('input[name="character"]').forEach(input => input.checked = false);
             displayCharacter(); // Display new character image
             message.textContent = "";
             attemptsDisplay.textContent = ""; // Clear attempts display
@@ -234,6 +235,7 @@ function quitGame() {
     }
 }
 */
+        // JavaScript code to handle button click and form visibility
 // Event listeners
 document.getElementById("usernameForm").addEventListener("submit", function(event) {
     event.preventDefault();

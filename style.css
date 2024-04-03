@@ -1,6 +1,6 @@
 html, body {
     font-family: 'Comic Sans MS', cursive, sans-serif;
-    background-image: url(game_page_background.jpg);
+    background-image: url(pinky.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -8,7 +8,9 @@ html, body {
     height: 100vh; /* Set height to cover entire viewport */
 }
 
-
+#topScoresForm {
+    display: none;
+}
 
 .container {
     display: flex;
