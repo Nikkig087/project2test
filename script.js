@@ -145,18 +145,18 @@ function quitGame() {
         cancelButtonText: 'No'
     }).then((result) => {
         if (result.isConfirmed) {
-            lifes = 3; // Reset total attempts counter
-            correctAnswers = 0; // Reset correct answers counter
+            lifes = 3; // 
+            correctAnswers = 0; 
             document.getElementById("message").textContent = "";
             document.getElementById("attempts").textContent = "";
-            document.getElementById("correctAnswers").textContent = ""; // Clear correct answers display
+            document.getElementById("correctAnswers").textContent = ""; 
             document.getElementById("usernameInput").value = "";
             document.getElementById("loginContainer").classList.remove("hidden");
             document.getElementById("gameContainer").classList.add("hidden");
-            document.getElementById("gameArea").classList.add("hidden"); // Hide game area
-            document.getElementById("quitGame").classList.add("hidden"); // Hide game area
-            document.getElementById("usernameForm").classList.remove("hidden"); // Show login form
-            document.getElementById("gameHead ").classList.add("hidden"); // 
+            document.getElementById("gameArea").classList.add("hidden"); 
+            document.getElementById("quitGame").classList.add("hidden"); 
+            document.getElementById("usernameForm").classList.remove("hidden"); 
+            document.getElementById("gameHead ").classList.add("hidden"); 
             document.getElementById("header").classList.remove("hidden");
             document.getElementById("loggedInUser").classList.add("hidden");
             /*

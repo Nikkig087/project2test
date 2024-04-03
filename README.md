@@ -15,7 +15,7 @@ In this section, you should go over the different parts of your project, and des
 
 - **Username Entry**: Featured prominently on the landing page, users are prompted to enter their username to begin the game.
   - This feature ensures personalized gameplay experience and allows players to track their progress.
-- **Character Guessing**: Users are presented with an image of a character from The Flintstones and are prompted to guess the character's name.
+- **Character Guessing**: Users are presented with an image of a character from some well known cartoon series's and are prompted to guess the character's name.
   - This feature engages users by testing their knowledge of the iconic characters from the series.
 - **Game Messages**: Informative messages are displayed to guide users through the gameplay and provide feedback on their guesses.
   - This feature enhances the user experience by offering clear instructions and feedback.
@@ -27,24 +27,30 @@ In this section, you should go over the different parts of your project, and des
 
 1. **Username Entry**: Users are required to enter their username in the designated input field.
 2. **Start Game**: After entering their username, users can click on the "Start Game" button to begin.
-3. **Guessing Characters**: Users are presented with an image of a character from The Flintstones and prompted to enter their guess in the provided input field.
-4. **Check Guess**: After entering their guess, users can click on the "Check" button to submit their answer and receive feedback.
-5. **Game Progress**: Users can continue guessing characters until they correctly identify all characters or decide to quit the game.
+3. **Guessing Characters**: Users are presented with an image of a Cartoon Character and a list of possible answers to choose from.
+4. **Check Guess**: After selecting the radio button with the possible correct guess, userslivesclick on the "Check" button to submit their answer and receive feedback.
+5. **Game Progress**: Users are given three lives to begin with, each wrong guess for a single Character means a life is lost.  If the User guesses correctly for that Cartoon Character before they have lost all three lifes then the lifes are reset on the next image shown. They can continue guessing characters until they loose all their lives or correctly identify all characters or decide to quit the game.
 
 ### Future Features
 
 - **Timer**: Introduce a timer feature to add an element of challenge and excitement to the gameplay.
+- **High Scores**: Implement a feature to store and display high scores.
+- **Animation**:  Add animations for character transitions and guessing feedback.
 
 ## Testing 
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+### Challenges
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+Character Repetition: Initially, there was an issue where characters could repeat consecutively, affecting the game's randomness. However, I was able to resolve this by looping through the selection process until a different character is picked. Once a new character is selected, its image is displayed, and its name is stored as the current character. This prevents repetition and ensures a fresh character is always shown.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+![New Character Loop](docs/images/newCharacter-loop.png)
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
+Quit Button Functionality: Implementing the quit button to return to the login screen posed a challenge initially. However, thorough testing and debugging resolved this issue, and now the quit button functions as intended.
+
+### Bugs
+
+There are no known bugs in the application.
 
 ### Validator Testing 
 
