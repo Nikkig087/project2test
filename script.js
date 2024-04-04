@@ -89,50 +89,72 @@ function checkGuess() {
         }
     }
 
+
     // Display correct answers count
     document.getElementById("correctAnswers").textContent = `Correct answers: ${correctAnswers}`;
 }
+document.addEventListener("DOMContentLoaded", function () {
+    displayHighScores();
+});
+
+function displayHighScores() {
+    const highScoresList = document.getElementById("highScoresList");
+    const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+    
+    // Create list items for each high score and append to the highScoresList
+    highScoresList.innerHTML = highScores
+        .map((score) => {
+            return `
+                <li>${score.username} - ${score.score}</li>
+            `;
+        })
+        .join("");
+}
 
 function gameOver() {
-    //const playAgain = confirm("Bam Bam! You're out. Do you want to play again?");
     username = document.getElementById("usernameInput").value.trim();
     const capitalizedUsername = username.charAt(0).toUpperCase() + username.slice(1);
+     // Save high score and username
+     const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+     highScores.push({ username: username, score: correctAnswers });
+     localStorage.setItem("highScores", JSON.stringify(highScores));
     swal.fire({
         title: 'Game Over',
-        html: `${capitalizedUsername} your out, your score was ${correctAnswers} <br>do you want to play again?`,
+        html: `${capitalizedUsername}, you're out. Your score was ${correctAnswers}. Do you want to play again?`,
         icon: 'error',
         showCancelButton: true,
         confirmButtonText: 'Yes',
         cancelButtonText: 'No'
     }).then((result) => {
         if (result.isConfirmed) {
-        lifes = 3;
-        correctAnswers = 0;
-    
-        document.getElementById("correctAnswers").textContent = ""; // Clear correct answers display
-        document.getElementById("message").textContent = "";
-        document.getElementById("attempts").textContent = "";
-        document.querySelectorAll('input[name="character"]').forEach(input => input.checked = false);
-        displayCharacter(); // Display new character image
-    } else {
-        lifes = 3; // Reset total attempts counter
-        correctAnswers = 0; // Reset correct answers counter
-        document.getElementById("message").textContent = "";
-        document.getElementById("attempts").textContent = "";
-        document.getElementById("correctAnswers").textContent = ""; // Clear correct answers display
-        document.getElementById("usernameInput").value = "";
-        document.getElementById("loginContainer").classList.remove("hidden");
-        document.getElementById("gameContainer").classList.add("hidden");
-        document.getElementById("gameArea").classList.add("hidden"); // Hide game area
-        document.getElementById("quitGame").classList.add("hidden"); // Hide game area
-        document.getElementById("usernameForm").classList.remove("hidden"); // Show login form
-        document.getElementById("gameHead ").classList.add("hidden"); // 
-        document.getElementById("header").classList.remove("hidden");
-        document.getElementById("loggedInUser").classList.add("hidden");
+            lifes = 3;
+            correctAnswers = 0;
+            document.getElementById("correctAnswers").textContent = ""; // Clear correct answers display
+            document.getElementById("message").textContent = "";
+            document.getElementById("attempts").textContent = "";
+            document.querySelectorAll('input[name="character"]').forEach(input => input.checked = false);
+            displayCharacter(); // Display new character image
+        } else {
+            lifes = 3; // Reset total attempts counter
+            correctAnswers = 0; // Reset correct answers counter
+            document.getElementById("message").textContent = "";
+            document.getElementById("attempts").textContent = "";
+            document.getElementById("correctAnswers").textContent = ""; // Clear correct answers display
+            document.getElementById("usernameInput").value = "";
+            document.getElementById("loginContainer").classList.remove("hidden");
+            document.getElementById("gameContainer").classList.add("hidden");
+            document.getElementById("gameArea").classList.add("hidden"); // Hide game area
+            document.getElementById("quitGame").classList.add("hidden"); // Hide game area
+            document.getElementById("usernameForm").classList.remove("hidden"); // Show login form
+            document.getElementById("gameHead ").classList.add("hidden"); // 
+            document.getElementById("header").classList.remove("hidden");
+            document.getElementById("loggedInUser").classList.add("hidden");
+        }
         
-    }
-});
+       
+    });
 }
+
 
 function quitGame() {
     username = document.getElementById("usernameInput").value.trim();
