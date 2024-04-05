@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Who am I??</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
@@ -28,13 +28,13 @@
 
         <div id="gameContainer" class="gameContainer">
             <div class="header hidden" id="gameHead ">
-                <img src="apple-touch-icon.png" alt="Bedrock Logo">
+               
                 <h1>Who Am I??</h1>
             </div>
           
             <div id="loggedInUser" class="user-info hidden"></div>
             <div id="gameArea" class="hidden">
-                <img id="characterImg" src="" alt="Character Image">
+                <img id="characterImg" src="assets/images/" alt="Character Image">
                 <form id="guessForm" class="guessform">
                     <label for="guessInput">Select the character's name:</label><br>
                     <input type="radio" id="guessA" name="character" value="Bart">
@@ -58,7 +58,7 @@
         </div>
     </div>
     
-    <script src="script.js"></script>
-    <script src="high-score.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/high-score.js"></script>
 </body>
 </html>

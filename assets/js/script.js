@@ -35,7 +35,7 @@ function displayCharacter() {
 
     previousCharacter = newCharacter.name;
 
-    document.getElementById("characterImg").src = newCharacter.image;
+    document.getElementById("characterImg").src = "assets/images/" + newCharacter.image;
     currentCharacter = newCharacter.name;
 }
 
