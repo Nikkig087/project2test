@@ -7,6 +7,18 @@ let username;
 let currentCharacter;
 let previousCharacter;
 
+// script.js
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Add event listener to the button
+    document.getElementById("backButton").addEventListener("click", goToIndex);
+});
+
+// Function to navigate to the index page
+function goToIndex() {
+    window.location.href = "index.html"; // Replace "index.html" with your actual index page URL
+}
+
 
 function displayCharacter() {
     const characters = [
@@ -96,28 +108,69 @@ function checkGuess() {
 document.addEventListener("DOMContentLoaded", function () {
     displayHighScores();
 });
-
 function displayHighScores() {
     const highScoresList = document.getElementById("highScoresList");
     const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+
+  
+    highScoresList.innerHTML = "";
     
-    // Create list items for each high score and append to the highScoresList
-    highScoresList.innerHTML = highScores
-        .map((score) => {
-            return `
-                <li>${score.username} - ${score.score}</li>
-            `;
-        })
-        .join("");
+    const heading = document.createElement("h1");
+    heading.textContent = "High Scores";
+    heading.classList.add("text-center", "mb-4");
+
+    highScoresList.appendChild(heading);
+    
+    const table = document.createElement("table");
+    table.classList.add("table");
+
+  
+    const headerRow = document.createElement("tr");
+    const usernameHeader = document.createElement("th");
+    usernameHeader.textContent = "Username";
+    headerRow.appendChild(usernameHeader);
+    const scoreHeader = document.createElement("th");
+    scoreHeader.textContent = "Score";
+    headerRow.appendChild(scoreHeader);
+    table.appendChild(headerRow);
+
+
+    highScores.forEach(score => {
+        const row = document.createElement("tr");
+        const usernameCell = document.createElement("td");
+        usernameCell.textContent = score.username;
+        row.appendChild(usernameCell);
+        const scoreCell = document.createElement("td");
+        scoreCell.textContent = score.score;
+        row.appendChild(scoreCell);
+        table.appendChild(row);
+    });
+
+    
+    highScoresList.appendChild(table);
 }
 
 function gameOver() {
     username = document.getElementById("usernameInput").value.trim();
     const capitalizedUsername = username.charAt(0).toUpperCase() + username.slice(1);
-     // Save high score and username
-     const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
-     highScores.push({ username: username, score: correctAnswers });
-     localStorage.setItem("highScores", JSON.stringify(highScores));
+  
+    const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+    
+  
+    const existingUserIndex = highScores.findIndex(score => score.username === username);
+    
+    if (existingUserIndex !== -1) {
+     
+        if (correctAnswers > highScores[existingUserIndex].score) {
+            highScores[existingUserIndex].score = correctAnswers;
+        }
+    } else {
+     
+        highScores.push({ username: username, score: correctAnswers });
+    }
+    
+    localStorage.setItem("highScores", JSON.stringify(highScores));
+    
     swal.fire({
         title: 'Game Over',
         html: `${capitalizedUsername}, you're out. Your score was ${correctAnswers}. Do you want to play again?`,
@@ -127,6 +180,7 @@ function gameOver() {
         cancelButtonText: 'No'
     }).then((result) => {
         if (result.isConfirmed) {
+            // Reset game
             lifes = 3;
             correctAnswers = 0;
             document.getElementById("correctAnswers").textContent = ""; // Clear correct answers display
@@ -135,6 +189,7 @@ function gameOver() {
             document.querySelectorAll('input[name="character"]').forEach(input => input.checked = false);
             displayCharacter(); // Display new character image
         } else {
+            // End game
             lifes = 3; // Reset total attempts counter
             correctAnswers = 0; // Reset correct answers counter
             document.getElementById("message").textContent = "";
@@ -150,11 +205,8 @@ function gameOver() {
             document.getElementById("header").classList.remove("hidden");
             document.getElementById("loggedInUser").classList.add("hidden");
         }
-        
-       
     });
 }
-
 
 function quitGame() {
     username = document.getElementById("usernameInput").value.trim();
@@ -276,3 +328,4 @@ window.onload = function() {
     document.getElementById("gameContainer").classList.add("hidden");
 };
 document.getElementById("usernameForm").addEventListener("submit", startGame);
+
