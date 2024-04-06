@@ -70,7 +70,8 @@ h1.text-center.mb-4{
 .guessform {
     padding: 0;
     max-width: 550px;
-    width: 100%;
+    width: 90%;
+    margin-left: 70px;
     
 }
 /* Adjustments to the labels and radio buttons */
@@ -131,7 +132,7 @@ button {
     border-radius: 10px;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
     position: absolute;
-    top: 30px;
+    top: 40px;
     right: 30px;
     padding:10px;
     color: red;
@@ -328,9 +329,16 @@ button:hover {
         margin: 10px 20px 0;
     }
 
-    #guessForm.form {
+   /* #guessForm.form {
         width: 85%;
         margin: 0 auto;
+    }*/
+
+    .guessform {
+        padding: 0;
+        max-width: 550px;
+        width: 90%;
+        margin-left: 0;
     }
 
     #usernameForm.form {
@@ -345,7 +353,15 @@ button:hover {
 
 @media screen and (min-width: 768px) {
 
-    
+    html, body {
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        background-image: url(../images/pinky-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
     /* Other existing rules remain unchanged */
     .loginContainer {
         flex-direction: column;
@@ -366,19 +382,28 @@ button:hover {
         box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
         padding: 20px;
         opacity: 0.9;
-        width: 30%;
+        width: 38%;
         color: red;
     }
 
 
+
     #loggedInUser {
         margin-bottom: 20px;
-        padding: 20px;
+        padding: 10px;
     }
 
-    #guessForm.form {
+   /* #guessForm.form {
         width: 100%;
         margin: 0 auto;
+    }*/
+
+
+    .guessform {
+        padding: 0;
+        /* max-width: 550px; */
+        width: 100%;
+        margin-left: 0;
     }
 
     #usernameForm.form {
@@ -395,7 +420,15 @@ button:hover {
 
 @media screen and (min-width: 900px) {
 
-    
+    html, body {
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        background-image: url(../images/pinky.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
     /* Other existing rules remain unchanged */
     .loginContainer {
         flex-direction: column;
@@ -416,19 +449,27 @@ button:hover {
         box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
         padding: 20px;
         opacity: 0.9;
-        width: 18%;
+        width: 28%;
         color: red;
+        align-items: center;
     }
 
 
     #loggedInUser {
         margin-bottom: 20px;
-        padding: 20px;
+        padding: 10px;
     }
-
+/*
     #guessForm.form {
-        width: 100%;
+        width: 60%;
         margin: 0 auto;
+    }*/
+
+    .guessform {
+        padding: 0;
+        /* max-width: 550px; */
+        width: 70%;
+    margin-left: 50px;
     }
 
     #usernameForm.form {
