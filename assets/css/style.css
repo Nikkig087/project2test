@@ -26,15 +26,21 @@ html, body {
 
 /* Other CSS rules remain unchanged */
 
-
+h1.text-center.mb-4{
+    padding: 2% 0;
+}
 .header {
     text-align: center;
-    margin:10px;
+    margin:20px;
     width: 100%;
     flex-direction: column;
     display: flex;
     justify-content: center;
     padding: 10px;
+    color: red;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: larger;
 }
 
 .header img {
@@ -43,31 +49,34 @@ html, body {
 }
 
 #gameArea{
-    background-color: beige;
+    background-color: burlywood;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
     padding: 20px;
-    opacity: 0.8;
+    opacity: 0.9;
     width: 18%;
+    color: red;
 }
 .form {
-    background-color: beige;
+    background-color: burlywood;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
     max-width: 550px;
     width: auto;
+    color: red;
 }
 
 .guessform {
     padding: 0;
     max-width: 550px;
     width: 100%;
+    
 }
 /* Adjustments to the labels and radio buttons */
-#guesForm label {
-    display: flex;
-    align-items: center;
+#guessForm label {
+
+    color: red;
 }
 
 #guesForm input[type="radio"] {
@@ -118,13 +127,14 @@ button {
 }
 
 #loggedInUser {
-    background-color: beige;
+    background-color: burlywood;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 30px;
     right: 30px;
     padding:10px;
+    color: red;
 }
 
 button#quitGame {
@@ -173,6 +183,7 @@ button:hover {
 #options label {
     display: block;
     margin-bottom: 10px; /* Adjust as needed for spacing between options */
+    color: red;
 }
 .guessform .button-area {
     flex-direction: row;
@@ -199,11 +210,11 @@ button:hover {
     height: 50%;
     width: 50%;
     background-color: beige;;
-    text-align: left;
-    padding: 10%;
+    text-align: justify;
+    padding: 2%;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .table th {
@@ -241,28 +252,35 @@ button:hover {
     }
 
     #gameArea{
-        background-color: beige;
+        background-color: burlywood;
         border-radius: 10px;
         box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
         padding: 20px;
-        opacity: 0.8;
+        opacity: 0.9;
         width: 80%;
         margin-top: 80px;
+        color: red;
     }
+    #guessForm label {
 
+        color: black;
+    }
     .header {
-        margin: 10px 10px 0 0;
+        margin: 20px 20px 0 0;
         padding-bottom: 0;
+        color: red;
+        font-weight: bolder;
     }
 
     #loggedInUser {
-        background-color: beige;
+        background-color: burlywood;
         border-radius: 10px;
         box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
         position: absolute;
         top: 80px;
-        right: 25%;
+        right: 20%;
         padding:10px;
+        color: red;
     }
        
 
@@ -307,7 +325,7 @@ button:hover {
     }
 
     #loggedInUser {
-        margin-bottom: 20px;
+        margin: 10px 20px 0;
     }
 
     #guessForm.form {
@@ -343,12 +361,13 @@ button:hover {
         margin: 0;
     }
     #gameArea{
-        background-color: beige;
+        background-color: burlywood;
         border-radius: 10px;
         box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
         padding: 20px;
-        opacity: 0.8;
+        opacity: 0.9;
         width: 30%;
+        color: red;
     }
 
 
@@ -392,12 +411,13 @@ button:hover {
         margin: 0;
     }
     #gameArea{
-        background-color: beige;
+        background-color: burlywood;
         border-radius: 10px;
         box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
         padding: 20px;
-        opacity: 0.8;
+        opacity: 0.9;
         width: 18%;
+        color: red;
     }
 
 
