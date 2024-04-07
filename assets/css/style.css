@@ -28,6 +28,11 @@ html, body {
 
 h1.text-center.mb-4{
     padding: 2% 0;
+    text-align: center;
+    font-family: "Abril Fatface", Times, serif;
+    font-size: -webkit-xxx-large;
+    color: red;
+    text-shadow: 4px 4px 5px white;
 }
 .header {
     text-align: center;
@@ -37,10 +42,12 @@ h1.text-center.mb-4{
     display: flex;
     justify-content: center;
     padding: 10px;
-    color: red;
+    color:orangered;
     font-weight: bolder;
     font-style: italic;
-    font-size: larger;
+    font-size: xx-large;
+    font-family: "Abril Fatface", serif;
+    text-shadow: 4px 4px 5px white;
 }
 
 .header img {
@@ -49,22 +56,23 @@ h1.text-center.mb-4{
 }
 
 #gameArea{
-    background-color: burlywood;
+    background-color: yellow;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
     padding: 20px;
-    opacity: 0.9;
+    opacity: 0.8;
     width: 18%;
     color: red;
 }
 .form {
-    background-color: burlywood;
+    background-color: yellow;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
     max-width: 550px;
     width: auto;
     color: red;
+    opacity: 0.8;
 }
 
 .guessform {
@@ -77,7 +85,7 @@ h1.text-center.mb-4{
 /* Adjustments to the labels and radio buttons */
 #guessForm label {
 
-    color: red;
+    color: black;
 }
 
 #guesForm input[type="radio"] {
@@ -118,7 +126,7 @@ input[type="text"] {
 }
 
 button {
-    background-color: #8b4513;
+    background-color: red;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -128,7 +136,7 @@ button {
 }
 
 #loggedInUser {
-    background-color: burlywood;
+    background-color: yellow;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
     position: absolute;
@@ -140,7 +148,7 @@ button {
 
 button#quitGame {
     
-        background-color: #8b4513;
+        background-color: red;
         color: #fff;
         border: none;
         padding: 10px 20px;
@@ -153,8 +161,8 @@ button#quitGame {
 }
 
 
-button:hover {
-    background-color: #a0522d;
+button:hover, button#quitGame:hover {
+    background-color: blue;
 }
 
 #message {
@@ -210,12 +218,12 @@ button:hover {
     /*align-items: center;*/
     height: 50%;
     width: 50%;
-    background-color: beige;;
+    background-color: yellow;;
     text-align: justify;
     padding: 2%;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .table th {
@@ -278,8 +286,8 @@ button:hover {
         border-radius: 10px;
         box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
         position: absolute;
-        top: 80px;
-        right: 20%;
+        top: 110px;
+        right: auto;
         padding:10px;
         color: red;
     }
@@ -324,7 +332,7 @@ button:hover {
         flex-wrap: wrap;
         margin: 0;
     }
-
+/*
     #loggedInUser {
         margin: 10px 20px 0;
     }
@@ -355,7 +363,7 @@ button:hover {
 
     html, body {
         font-family: 'Comic Sans MS', cursive, sans-serif;
-        background-image: url(../images/pinky-tablet.jpg);
+        background-image: url(../images/sonic_tablet.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         margin: 0;
@@ -377,11 +385,11 @@ button:hover {
         margin: 0;
     }
     #gameArea{
-        background-color: burlywood;
+        background-color: yellow;
         border-radius: 10px;
         box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
         padding: 20px;
-        opacity: 0.9;
+        opacity: 0.8;
         width: 38%;
         color: red;
     }
@@ -444,7 +452,7 @@ button:hover {
         margin: 0;
     }
     #gameArea{
-        background-color: burlywood;
+        background-color: yellow;
         border-radius: 10px;
         box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
         padding: 20px;
@@ -469,7 +477,7 @@ button:hover {
         padding: 0;
         /* max-width: 550px; */
         width: 70%;
-    margin-left: 50px;
+    margin-left: 40px;
     }
 
     #usernameForm.form {
@@ -499,5 +507,16 @@ button:hover {
 
     .question-area {
         padding: 10px 0;
+    }
+
+    #loggedInUser {
+        background-color: burlywood;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
+        position: absolute;
+        top: 200px;
+        right: auto;
+        padding:10px;
+        color: red;
     }
 }
