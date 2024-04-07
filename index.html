@@ -17,7 +17,7 @@
             </div>
             <div class="loginContainer">
                 <form id="usernameForm" class="form">
-                    <label for="username">Enter your username:</label>
+                    <label for="usernameInput">Enter your username:</label>
                     <input type="text" id="usernameInput" placeholder="Username" required>
                     <button type="submit">Start Game</button>
                     <button onclick="location.href='high_scores.html';">View High Scores</button>
@@ -27,7 +27,7 @@
         </div>
 
         <div id="gameContainer" class="gameContainer">
-            <div class="header hidden" id="gameHead ">
+            <div class="header hidden" id="gameHead">
                
                 <h1>Who Am I??</h1>
             </div>
@@ -36,7 +36,8 @@
             <div id="gameArea" class="hidden">
                 <img id="characterImg" src="assets/images/" alt="Character Image">
                 <form id="guessForm" class="guessform">
-                    <label for="guessInput">Select the character's name:</label><br>
+                    <p >Select the character's name:</p>
+                    
                     <input type="radio" id="guessA" name="character" value="Bart">
                     <label for="guessA">Bart</label><br>
 

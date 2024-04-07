@@ -1,5 +1,7 @@
 /* jshint esversion: 6 */
 
+// Defining swal as a global variable to avoid JSHint errors
+/* global swal */
 
 let lifes = 3;
 let correctAnswers = 0;
@@ -56,7 +58,7 @@ function startGame(event) {
         document.getElementById("gameContainer").classList.remove("hidden"); // Show game container
         document.getElementById("gameArea").classList.remove("hidden"); // Show game area
         document.getElementById("quitGame").classList.remove("hidden"); // Show quit button area
-        document.getElementById("gameHead ").classList.remove("hidden"); // 
+        document.getElementById("gameHead").classList.remove("hidden"); // 
         document.getElementById("header").classList.add("hidden");
         lifes = 3;
         correctAnswers = 0; // Reset correct answers counter
@@ -201,7 +203,7 @@ function gameOver() {
             document.getElementById("gameArea").classList.add("hidden"); // Hide game area
             document.getElementById("quitGame").classList.add("hidden"); // Hide game area
             document.getElementById("usernameForm").classList.remove("hidden"); // Show login form
-            document.getElementById("gameHead ").classList.add("hidden"); // 
+            document.getElementById("gameHead").classList.add("hidden"); // 
             document.getElementById("header").classList.remove("hidden");
             document.getElementById("loggedInUser").classList.add("hidden");
         }
@@ -234,7 +236,7 @@ function quitGame() {
             document.getElementById("gameArea").classList.add("hidden"); 
             document.getElementById("quitGame").classList.add("hidden"); 
             document.getElementById("usernameForm").classList.remove("hidden"); 
-            document.getElementById("gameHead ").classList.add("hidden"); 
+            document.getElementById("gameHead").classList.add("hidden"); 
             document.getElementById("header").classList.remove("hidden");
             document.getElementById("loggedInUser").classList.add("hidden");
             /*

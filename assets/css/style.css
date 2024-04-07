@@ -5,7 +5,7 @@
 }
 html, body {
     font-family: 'Comic Sans MS', cursive, sans-serif;
-    background-image: url(../images/pinky.jpg);
+    background-image: url(../images/sonic_big_background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -30,7 +30,7 @@ h1.text-center.mb-4{
     padding: 2% 0;
     text-align: center;
     font-family: "Abril Fatface", Times, serif;
-    font-size: -webkit-xxx-large;
+    font-size:xx-large;
     color: red;
     text-shadow: 4px 4px 5px white;
 }
@@ -85,7 +85,7 @@ h1.text-center.mb-4{
 /* Adjustments to the labels and radio buttons */
 #guessForm label {
 
-    color: black;
+    color: red;
 }
 
 #guesForm input[type="radio"] {
@@ -243,7 +243,7 @@ button:hover, button#quitGame:hover {
 @media screen and (max-width: 600px){
     html, body {
         font-family: 'Comic Sans MS', cursive, sans-serif;
-        background-image: url('/assets/images/mobile-background.jpg');
+        background-image: url('/assets/images/sonic_mobile.png');
         background-repeat: no-repeat;
         background-size: cover;
         margin: 0;
@@ -256,23 +256,24 @@ button:hover, button#quitGame:hover {
         flex-direction: column;
         align-items: center;
         margin: 0;
-        background-image: url('/assets/images/mobile-background.jpg');
+        background-image: url('/assets/images/sonic_mobile.png');
         height: 100%;
     }
 
     #gameArea{
-        background-color: burlywood;
+        background-color: yellow;
         border-radius: 10px;
         box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
         padding: 20px;
-        opacity: 0.9;
+        opacity: 0.8;
         width: 80%;
         margin-top: 80px;
         color: red;
+        margin-right: 10%;
     }
     #guessForm label {
 
-        color: black;
+        color: red;
     }
     .header {
         margin: 20px 20px 0 0;
@@ -281,8 +282,10 @@ button:hover, button#quitGame:hover {
         font-weight: bolder;
     }
 
+    
+
     #loggedInUser {
-        background-color: burlywood;
+        background-color: yellow;
         border-radius: 10px;
         box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
         position: absolute;
@@ -430,7 +433,7 @@ button:hover, button#quitGame:hover {
 
     html, body {
         font-family: 'Comic Sans MS', cursive, sans-serif;
-        background-image: url(../images/pinky.jpg);
+        background-image: url(../images/sonic_big_background.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         margin: 0;
@@ -510,7 +513,7 @@ button:hover, button#quitGame:hover {
     }
 
     #loggedInUser {
-        background-color: burlywood;
+        background-color: yellow;
         border-radius: 10px;
         box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
         position: absolute;
@@ -518,5 +521,9 @@ button:hover, button#quitGame:hover {
         right: auto;
         padding:10px;
         color: red;
+    }
+
+    #highScoresList {  
+        width: 80%;
     }
 }
