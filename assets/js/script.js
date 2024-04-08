@@ -1,6 +1,5 @@
 /* jshint esversion: 6 */
 
-// Defining swal as a global variable to avoid JSHint errors
 /* global swal */
 
 let lifes = 3;
@@ -9,16 +8,14 @@ let username;
 let currentCharacter;
 let previousCharacter;
 
-// script.js
-
 document.addEventListener("DOMContentLoaded", function() {
-    // Add event listener to the button
+    
     document.getElementById("backButton").addEventListener("click", goToIndex);
 });
 
-// Function to navigate to the index page
+
 function goToIndex() {
-    window.location.href = "index.html"; // Replace "index.html" with your actual index page URL
+    window.location.href = "index.html";
 }
 
 
@@ -26,7 +23,9 @@ function displayCharacter() {
     const characters = [
         { name: "Bart", image: "bart.png" },
         { name: "Sonic", image: "sonic.png" },
-        { name: "Spongebob", image: "spongebob.png" }
+        { name: "Spongebob", image: "spongebob.png" },
+        { name: "Mickey", image: "mickey.png" },
+        { name: "Simba", image: "simba.png" }
     ];
 
     let newCharacter;
@@ -39,10 +38,32 @@ function displayCharacter() {
 
     document.getElementById("characterImg").src = "assets/images/" + newCharacter.image;
     currentCharacter = newCharacter.name;
+
+    const correctCharacter = newCharacter;
+    const incorrectCharacters = characters.filter(character => character !== correctCharacter);
+
+   
+    const correctIndex = Math.floor(Math.random() * 3);
+
+
+    for (let i = 0; i < 3; i++) {
+        const radioBtn = document.getElementById(`guess${String.fromCharCode(65 + i)}`);
+        const label = document.querySelector(`label[for=guess${String.fromCharCode(65 + i)}]`);
+
+        if (i === correctIndex) {
+            radioBtn.value = correctCharacter.name;
+            label.textContent = correctCharacter.name;
+        } else {
+            const incorrectCharacter = incorrectCharacters.pop(); 
+            radioBtn.value = incorrectCharacter.name;
+            label.textContent = incorrectCharacter.name;
+        }
+    }
 }
 
+
 function startGame(event) {
-    event.preventDefault(); // Prevent the default form submission behavior
+    event.preventDefault(); 
      username = document.getElementById("usernameInput").value.trim();
     const capitalizedUsername = username.charAt(0).toUpperCase() + username.slice(1);
     if (username) {
@@ -55,19 +76,19 @@ function startGame(event) {
           });
         document.getElementById("loggedInUser").textContent = `Logged in as: ${username}`;
         document.getElementById("usernameForm").classList.add("hidden");
-        document.getElementById("gameContainer").classList.remove("hidden"); // Show game container
-        document.getElementById("gameArea").classList.remove("hidden"); // Show game area
-        document.getElementById("quitGame").classList.remove("hidden"); // Show quit button area
-        document.getElementById("gameHead").classList.remove("hidden"); // 
+        document.getElementById("gameContainer").classList.remove("hidden"); 
+        document.getElementById("gameArea").classList.remove("hidden"); 
+        document.getElementById("quitGame").classList.remove("hidden"); 
+        document.getElementById("gameHead").classList.remove("hidden"); 
         document.getElementById("header").classList.add("hidden");
         lifes = 3;
-        correctAnswers = 0; // Reset correct answers counter
+        correctAnswers = 0; 
         document.getElementById("loggedInUser").classList.remove("hidden");
         document.getElementById("message").textContent = "";
         document.getElementById("attempts").textContent = "";
-        document.getElementById("correctAnswers").textContent = ""; // Clear correct answers display
+        document.getElementById("correctAnswers").textContent = ""; 
         document.querySelectorAll('input[name="character"]').forEach(input => input.checked = false);
-        displayCharacter(); // Display character image
+        displayCharacter(); 
     
         
     } else {
@@ -87,9 +108,9 @@ function checkGuess() {
         message.textContent = `Congratulations, ${capitalizedUsername}! You guessed it right!`;
         setTimeout(function() {
             document.querySelectorAll('input[name="character"]').forEach(input => input.checked = false);
-            displayCharacter(); // Display new character image
+            displayCharacter(); 
             message.textContent = "";
-            attemptsDisplay.textContent = ""; // Clear attempts display
+            attemptsDisplay.textContent = ""; 
         }, 2000);
         correctAnswers++;
         lifes = 3;
@@ -99,17 +120,19 @@ function checkGuess() {
         attemptsDisplay.textContent = `Number of lifes left: ${lifes}`;
         if (lifes === 0) {
             gameOver();
-            return; // Stop further execution
+            return; 
         }
     }
 
 
-    // Display correct answers count
+ 
     document.getElementById("correctAnswers").textContent = `Correct answers: ${correctAnswers}`;
 }
 document.addEventListener("DOMContentLoaded", function () {
     displayHighScores();
 });
+
+
 function displayHighScores() {
     const highScoresList = document.getElementById("highScoresList");
     const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
@@ -182,28 +205,28 @@ function gameOver() {
         cancelButtonText: 'No'
     }).then((result) => {
         if (result.isConfirmed) {
-            // Reset game
+           
             lifes = 3;
             correctAnswers = 0;
             document.getElementById("correctAnswers").textContent = ""; // Clear correct answers display
             document.getElementById("message").textContent = "";
             document.getElementById("attempts").textContent = "";
             document.querySelectorAll('input[name="character"]').forEach(input => input.checked = false);
-            displayCharacter(); // Display new character image
+            displayCharacter(); 
         } else {
-            // End game
-            lifes = 3; // Reset total attempts counter
-            correctAnswers = 0; // Reset correct answers counter
+           
+            lifes = 3; 
+            correctAnswers = 0; 
             document.getElementById("message").textContent = "";
             document.getElementById("attempts").textContent = "";
-            document.getElementById("correctAnswers").textContent = ""; // Clear correct answers display
+            document.getElementById("correctAnswers").textContent = ""; 
             document.getElementById("usernameInput").value = "";
             document.getElementById("loginContainer").classList.remove("hidden");
             document.getElementById("gameContainer").classList.add("hidden");
-            document.getElementById("gameArea").classList.add("hidden"); // Hide game area
-            document.getElementById("quitGame").classList.add("hidden"); // Hide game area
-            document.getElementById("usernameForm").classList.remove("hidden"); // Show login form
-            document.getElementById("gameHead").classList.add("hidden"); // 
+            document.getElementById("gameArea").classList.add("hidden"); 
+            document.getElementById("quitGame").classList.add("hidden"); 
+            document.getElementById("usernameForm").classList.remove("hidden");
+            document.getElementById("gameHead").classList.add("hidden"); 
             document.getElementById("header").classList.remove("hidden");
             document.getElementById("loggedInUser").classList.add("hidden");
         }
@@ -239,95 +262,31 @@ function quitGame() {
             document.getElementById("gameHead").classList.add("hidden"); 
             document.getElementById("header").classList.remove("hidden");
             document.getElementById("loggedInUser").classList.add("hidden");
-            /*
-        lifes = 3;
-        correctAnswers = 0;
-    
-        document.getElementById("correctAnswers").textContent = ""; // Clear correct answers display
-        document.getElementById("message").textContent = "";
-        document.getElementById("attempts").textContent = "";
-        document.querySelectorAll('input[name="character"]').forEach(input => input.checked = false);
-        displayCharacter(); // Display new character image*/
+
     } else {
-        document.getElementById("correctAnswers").textContent = ""; // Clear correct answers display
+        document.getElementById("correctAnswers").textContent = ""; 
         document.getElementById("message").textContent = "";
         document.getElementById("attempts").textContent = "";
         document.querySelectorAll('input[name="character"]').forEach(input => input.checked = false);
         displayCharacter();
-
-        /*
-        lifes = 3; // Reset total attempts counter
-        correctAnswers = 0; // Reset correct answers counter
-        document.getElementById("message").textContent = "";
-        document.getElementById("attempts").textContent = "";
-        document.getElementById("correctAnswers").textContent = ""; // Clear correct answers display
-        document.getElementById("usernameInput").value = "";
-        document.getElementById("loginContainer").classList.remove("hidden");
-        document.getElementById("gameContainer").classList.add("hidden");
-        document.getElementById("gameArea").classList.add("hidden"); // Hide game area
-        document.getElementById("quitGame").classList.add("hidden"); // Hide game area
-        document.getElementById("usernameForm").classList.remove("hidden"); // Show login form
-        document.getElementById("gameHead ").classList.add("hidden"); // 
-        document.getElementById("header").classList.remove("hidden");
-        document.getElementById("loggedInUser").classList.add("hidden");*/
         
     }
 });
 }
     
-    /*const endGame = confirm("Are you sure you want to quit?");
-    
-    if (endGame) {
-        lifes = 3; // Reset total attempts counter
-        correctAnswers = 0; // Reset correct answers counter
-        document.getElementById("message").textContent = "";
-        document.getElementById("attempts").textContent = "";
-        document.getElementById("correctAnswers").textContent = ""; // Clear correct answers display
-        
-        document.getElementById("usernameInput").value = "";
-        document.getElementById("loginContainer").classList.remove("hidden");
-        document.getElementById("gameContainer").classList.add("hidden");
-        document.getElementById("gameArea").classList.add("hidden"); // Hide game area
-        document.getElementById("quitGame").classList.add("hidden"); // Hide game area
-        document.getElementById("usernameForm").classList.remove("hidden"); // Show login form
-        document.getElementById("gameHead ").classList.add("hidden"); // 
-        document.getElementById("header").classList.remove("hidden");
-        document.getElementById("loggedInUser").classList.add("hidden");
-    }else {
-
-        lifes = 3;
-        correctAnswers = 0;
-    
-        document.getElementById("correctAnswers").textContent = ""; // Clear correct answers display
-        document.getElementById("message").textContent = "";
-        document.getElementById("attempts").textContent = "";
-        document.querySelectorAll('input[name="character"]').forEach(input => input.checked = false);
-      
-       
-    // document.getElementById("attempts").textContent = "Number of attempts: 0"; // Reset attempts display
-    // document.getElementById("correctAnswers").textContent = "";
-     
-
-    }
-}
-*/
-        // JavaScript code to handle button click and form visibility
 // Event listeners
-document.getElementById("usernameForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-    startGame();
-});
-/*
-document.getElementById("usernameForm").addEventListener("submit", startGame);*/
+
 document.getElementById("guessForm").addEventListener("submit", function(event) {
     event.preventDefault();
     checkGuess();
 });
 document.getElementById("quitGame").addEventListener("click", quitGame);
 
-// Hide game area on page load
+document.getElementById("usernameForm").addEventListener("submit", startGame);
+
+//onload function
 window.onload = function() {
     document.getElementById("gameContainer").classList.add("hidden");
 };
-document.getElementById("usernameForm").addEventListener("submit", startGame);
+
 

@@ -4,9 +4,52 @@ This interactive game challenges players to guess the names of various character
 
 ![Responsice Mockup](https://github.com/lucyrush/readme-template/blob/master/media/love_running_mockup.png)
 
-## Features 
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+# User Stories
+
+## **First Time User Goals:**
+- As a user, the option to enter my username and begin playing should be clearly visible and easy to follow
+- The game interface should provide tooltips or hints to help me understand the purpose of each feature.
+- As a user, I want to be able to view the current High scores so that I have a goal to aim for as I play.
+- As a user, I want to understand the business's operating hours for future reference when planning to visit.
+- As a user, I do not want to be distracted by pop-up alerts, all alerts should only appear when necessary.
+- As a user, I want to have the option to Quit the game if I decide to do so. 
+
+## **Returning User Goals:**
+- Upon returning to the game, I should be greeted with a familiar interface that reflects my previous progress.
+- As a user, I want to view my previous highest score if I do have one.
+
+
+## **Frequent User Goals:**
+- As a user, I want to be constantly challenged with new character sets or gameplay modes to keep the experience fresh and exciting.
+
+<br>
+# Features 
+
+## The Colour Scheme
+The color scheme used was based on the Super Mario Sonic the Hedgehog game.  The colours used are bright and fun.
+
+![Colour Scheme](docs/images/sonic_the_hedgehog_by_schemecolor.png)
+
+## The Fonts Used
+
+The fonts used were bright and bold to emphazise the fun aspect of the game. The fonts used were carefully chosen as to not over power any other features of the website and protrayed the neccassary information in a clear easy to read mannor.
+
+
+- [Abril Fatface](https://fonts.google.com/specimen/Abril+Fatface) 
+- [Comic Sans MS] (https://freefonts.co/fonts/comic-sans-ms-regular)
+- [sans-serif](https://www.myfonts.com/pages/sans-serif-fonts)
+
+
+
+## Wireframes
+### Desktop and Mobile Homepage
+![Desktop Homepage Wireframe](docs/wireframes/desktop-homepage.webp)   ![Mobile Homepage Wireframe](docs/wireframes/mobile-homepage.webp)
+
+
+### Desktop and Mobile Subpages
+![Desktop Subpages Wireframe](docs/wireframes/subpages.webp)  ![Mobile Subpages Wireframe](docs/wireframes/mobile-subpage.webp)
+
 
 ### Existing Features
 ## Features
@@ -21,6 +64,8 @@ In this section, you should go over the different parts of your project, and des
   - This feature enhances the user experience by offering clear instructions and feedback.
 - **Quit Button**: Users have the option to quit the game at any time by clicking the "Quit" button.
   - This feature provides users with flexibility and control over their gaming experience.
+  -**High Scores**: Users have the option to view the current High Scores by clicking the "High Scores" button.
+  - This feature provides users with a target to reach when playing the game, if the User quits the game their score is not recorded to the High Scores table.
 
 
 ### Usage
@@ -34,7 +79,7 @@ In this section, you should go over the different parts of your project, and des
 ### Future Features
 
 - **Timer**: Introduce a timer feature to add an element of challenge and excitement to the gameplay.
-- **High Scores**: Implement a feature to store and display high scores.
+
 - **Animation**:  Add animations for character transitions and guessing feedback.
 
 ## Testing 

@@ -24,14 +24,14 @@ html, body {
     margin: 0;
 }
 
-/* Other CSS rules remain unchanged */
+
 
 h1.text-center.mb-4{
     padding: 2% 0;
     text-align: center;
     font-family: "Abril Fatface", Times, serif;
     font-size:xx-large;
-    color: red;
+    color: #DA2528;
     text-shadow: 4px 4px 5px white;
 }
 .header {
@@ -56,22 +56,22 @@ h1.text-center.mb-4{
 }
 
 #gameArea{
-    background-color: yellow;
+    background-color: #F6C883;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
     padding: 20px;
     opacity: 0.8;
     width: 18%;
-    color: red;
+    color: #DA2528;
 }
 .form {
-    background-color: yellow;
+    background-color: #F6C883;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
     max-width: 550px;
     width: auto;
-    color: red;
+    color: #DA2528;
     opacity: 0.8;
 }
 
@@ -82,18 +82,18 @@ h1.text-center.mb-4{
     margin-left: 70px;
     
 }
-/* Adjustments to the labels and radio buttons */
+
 #guessForm label {
 
-    color: red;
+    color: #DA2528;
 }
 
 #guesForm input[type="radio"] {
-    margin-right: 5px; /* Adjust as needed for spacing between the radio button and the word */
+    margin-right: 5px; 
 }
 
 #guesForm span {
-    margin-right: 15px; /* Adjust as needed for spacing between the word and the next radio button */
+    margin-right: 15px; 
 }
 
 .form-container {
@@ -114,7 +114,7 @@ form {
 label {
     display: inline-block;
     margin-bottom: 5px;
-    color: #664c37;
+    color: #000000;
 }
 
 input[type="text"] {
@@ -122,11 +122,11 @@ input[type="text"] {
     padding: 8px;
     margin-bottom: 10px;
     border-radius: 5px;
-    border: 1px solid #664c37;
+    border: 1px solid #000000;
 }
 
 button {
-    background-color: red;
+    background-color: #DA2528;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -136,19 +136,19 @@ button {
 }
 
 #loggedInUser {
-    background-color: yellow;
+    background-color:  #F6C883;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 40px;
     right: 30px;
     padding:10px;
-    color: red;
+    color: #DA2528;
 }
 
 button#quitGame {
     
-        background-color: red;
+        background-color: #DA2528;
         color: #fff;
         border: none;
         padding: 10px 20px;
@@ -162,7 +162,7 @@ button#quitGame {
 
 
 button:hover, button#quitGame:hover {
-    background-color: blue;
+    background-color: #3061E3;
 }
 
 #message {
@@ -179,7 +179,7 @@ button:hover, button#quitGame:hover {
 #characterImg {
    
     display: block;
-    margin: 0 auto; /* Center the image horizontally */
+    margin: 0 auto; 
     padding-bottom: 5%;
 }
 
@@ -191,8 +191,8 @@ button:hover, button#quitGame:hover {
 }
 #options label {
     display: block;
-    margin-bottom: 10px; /* Adjust as needed for spacing between options */
-    color: red;
+    margin-bottom: 10px; 
+    color: #DA2528;
 }
 .guessform .button-area {
     flex-direction: row;
@@ -218,7 +218,7 @@ button:hover, button#quitGame:hover {
     /*align-items: center;*/
     height: 50%;
     width: 50%;
-    background-color: yellow;;
+    background-color:  #F6C883;
     text-align: justify;
     padding: 2%;
     border-radius: 10px;
@@ -227,15 +227,15 @@ button:hover, button#quitGame:hover {
 }
 
 .table th {
-    background-color: #f2f2f2; /* Header background color */
+    background-color: #f2f2f2; 
 }
 
 .table tr:nth-child(even) {
-    background-color: #f9f9f9; /* Alternate row background color */
+    background-color: #f9f9f9; 
 }
 
 .table tr:hover {
-    background-color: #f5f5f5; /* Hover row background color */
+    background-color: #f5f5f5; 
 }
 
 
@@ -261,46 +261,40 @@ button:hover, button#quitGame:hover {
     }
 
     #gameArea{
-        background-color: yellow;
+        background-color:  #F6C883;
         border-radius: 10px;
         box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
         padding: 20px;
         opacity: 0.8;
         width: 80%;
         margin-top: 80px;
-        color: red;
+        color:  #DA2528;
         margin-right: 10%;
     }
     #guessForm label {
 
-        color: red;
+        color:  #DA2528;
     }
     .header {
         margin: 20px 20px 0 0;
         padding-bottom: 0;
-        color: red;
+        color:  #DA2528;
         font-weight: bolder;
     }
 
     
 
     #loggedInUser {
-        background-color: yellow;
+        background-color: #F6C883;
         border-radius: 10px;
         box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
         position: absolute;
         top: 110px;
         right: auto;
         padding:10px;
-        color: red;
+        color: #DA2528;
     }
-       
-
-    /* Other existing rules remain unchanged */
-
-
-
-
+ 
     form#guessForm {
       
         align-content: center;
@@ -308,19 +302,6 @@ button:hover, button#quitGame:hover {
     }
 
  
-
-    /* Adjust the position of the Quit button *
-    #quitGame {
-        position: static; /* Reset position *
-        margin-bottom: 20px; /* Adjust margin-top *
-    }
-
-    /* Ensure background image covers the entire container *
-    body, .container {
-        background-size: cover;
-    }
-
-    /* Other existing rules remain unchanged */
     .loginContainer {
         flex-direction: column;
         align-items: center;
@@ -335,15 +316,6 @@ button:hover, button#quitGame:hover {
         flex-wrap: wrap;
         margin: 0;
     }
-/*
-    #loggedInUser {
-        margin: 10px 20px 0;
-    }
-
-   /* #guessForm.form {
-        width: 85%;
-        margin: 0 auto;
-    }*/
 
     .guessform {
         padding: 0;
@@ -373,7 +345,7 @@ button:hover, button#quitGame:hover {
         padding: 0;
         height: 100%;
     }
-    /* Other existing rules remain unchanged */
+  
     .loginContainer {
         flex-direction: column;
         align-items: center;
@@ -388,13 +360,13 @@ button:hover, button#quitGame:hover {
         margin: 0;
     }
     #gameArea{
-        background-color: yellow;
+        background-color: #F6C883;
         border-radius: 10px;
         box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
         padding: 20px;
         opacity: 0.8;
         width: 38%;
-        color: red;
+        color: #DA2528;
     }
 
 
@@ -403,12 +375,6 @@ button:hover, button#quitGame:hover {
         margin-bottom: 20px;
         padding: 10px;
     }
-
-   /* #guessForm.form {
-        width: 100%;
-        margin: 0 auto;
-    }*/
-
 
     .guessform {
         padding: 0;
@@ -419,13 +385,10 @@ button:hover, button#quitGame:hover {
 
     #usernameForm.form {
         width: 70%;
-        margin: 0 auto; /* Center horizontally */
-        text-align: center; /* Center text */
+        margin: 0 auto;
+        text-align: center; 
     }
  
-
-
-   
 }
 
 
@@ -440,7 +403,7 @@ button:hover, button#quitGame:hover {
         padding: 0;
         height: 100%;
     }
-    /* Other existing rules remain unchanged */
+ 
     .loginContainer {
         flex-direction: column;
         align-items: center;
@@ -455,13 +418,13 @@ button:hover, button#quitGame:hover {
         margin: 0;
     }
     #gameArea{
-        background-color: yellow;
+        background-color: #F6C883;
         border-radius: 10px;
         box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
         padding: 20px;
         opacity: 0.9;
         width: 28%;
-        color: red;
+        color: #DA2528;
         align-items: center;
     }
 
@@ -470,11 +433,7 @@ button:hover, button#quitGame:hover {
         margin-bottom: 20px;
         padding: 10px;
     }
-/*
-    #guessForm.form {
-        width: 60%;
-        margin: 0 auto;
-    }*/
+
 
     .guessform {
         padding: 0;
@@ -485,13 +444,10 @@ button:hover, button#quitGame:hover {
 
     #usernameForm.form {
         width: 70%;
-        margin: 0 auto; /* Center horizontally */
-        text-align: center; /* Center text */
+        margin: 0 auto; 
+        text-align: center; 
     }
  
-
-
-   
 }
 
 @media (max-width: 320px) {
@@ -513,14 +469,14 @@ button:hover, button#quitGame:hover {
     }
 
     #loggedInUser {
-        background-color: yellow;
+        background-color: #F6C883;
         border-radius: 10px;
         box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
         position: absolute;
         top: 200px;
         right: auto;
         padding:10px;
-        color: red;
+        color: #DA2528;
     }
 
     #highScoresList {  
