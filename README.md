@@ -1,8 +1,8 @@
-# Love Running
+# Who Am I
 
 This interactive game challenges players to guess the names of various characters from classic animated series which may envoke some childhood memories. 
 
-![Responsice Mockup](https://github.com/lucyrush/readme-template/blob/master/media/love_running_mockup.png)
+![Responsice Test](docs/images/responsive_test.JPG)
 
 
 # User Stories
