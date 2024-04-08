@@ -127,13 +127,13 @@ input[type="text"] {
 
 button {
     background-color: #3061E3;
-    color: #fff;
+    color: #ffffff;
     border: none;
     padding: 10px 20px;
     margin-top: 10px;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 14pt bold;
+    font-size: 14pt;
 }
 
 #loggedInUser {
