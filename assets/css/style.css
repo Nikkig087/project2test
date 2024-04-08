@@ -62,7 +62,7 @@ h1.text-center.mb-4{
     padding: 20px;
     opacity: 0.8;
     width: 18%;
-    color: #DA2528;
+    color: blue;
 }
 .form {
     background-color: #F6C883;
@@ -71,7 +71,7 @@ h1.text-center.mb-4{
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
     max-width: 550px;
     width: auto;
-    color: #DA2528;
+    color: blue;
     opacity: 0.8;
 }
 
@@ -426,7 +426,7 @@ button:hover, button#quitGame:hover {
         padding: 20px;
         opacity: 0.9;
         width: 28%;
-        color: #DA2528;
+        color: blue;
         align-items: center;
     }
 
