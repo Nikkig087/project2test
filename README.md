@@ -43,8 +43,8 @@ The fonts used were bright and bold to emphazise the fun aspect of the game. The
 
 
 ## Wireframes
-### Desktop and Mobile Homepage
-![Desktop Homepage Wireframe](docs/wireframes/desktop-homepage.webp)   ![Mobile Homepage Wireframe](docs/wireframes/mobile-homepage.webp)
+### Desktop and Mobile User Login Page
+![Desktop User Login Wireframe](docs/wireframes/login_screen.png) <&nbsc>  ![Mobile User Login Wireframe](docs/wireframes/mobile_login.png)
 
 
 ### Desktop and Mobile Subpages
