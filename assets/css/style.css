@@ -85,7 +85,7 @@ h1.text-center.mb-4{
 
 #guessForm label {
 
-    color: #DA2528;
+    color: blue;
 }
 
 #guesForm input[type="radio"] {
@@ -126,14 +126,14 @@ input[type="text"] {
 }
 
 button {
-    background-color: #3061E3;
-    color: #ffffff;
+    background-color: blue;
+    color: #fff;
     border: none;
     padding: 10px 20px;
     margin-top: 10px;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 14pt;
+    
 }
 
 #loggedInUser {
@@ -149,7 +149,7 @@ button {
 
 button#quitGame {
     
-        background-color: #3061E3;
+        background-color: blue;
         color: #fff;
         border: none;
         padding: 10px 20px;
@@ -157,7 +157,7 @@ button#quitGame {
         cursor: pointer;
         border-radius: 5px;
         /*position: static;*/
-        font-size: 14pt bold;
+      
         
     
 }
@@ -194,7 +194,7 @@ button:hover, button#quitGame:hover {
 #options label {
     display: block;
     margin-bottom: 10px; 
-    color: #DA2528;
+    color: blue;
 }
 .guessform .button-area {
     flex-direction: row;
@@ -270,12 +270,12 @@ button:hover, button#quitGame:hover {
         opacity: 0.9;
         width: 80%;
         margin-top: 80px;
-        color:  #DA2528;
+        color: blue;
         margin-right: 10%;
     }
     #guessForm label {
 
-        color:  #DA2528;
+        color:  blue;
     }
     .header {
         margin: 20px 20px 0 0;
@@ -368,7 +368,7 @@ button:hover, button#quitGame:hover {
         padding: 20px;
         opacity: 0.8;
         width: 38%;
-        color: #DA2528;
+        color: blue;
     }
 
 
