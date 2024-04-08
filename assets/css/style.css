@@ -144,7 +144,7 @@ button {
     top: 40px;
     right: 30px;
     padding:10px;
-    color: #DA2528;
+    color: blue;
 }
 
 button#quitGame {
@@ -240,6 +240,44 @@ button:hover, button#quitGame:hover {
     background-color: #f5f5f5; 
 }
 
+div:where(.swal2-icon) .swal2-icon-content {
+    display: flex;
+    align-items: center;
+    font-size: 3.75em;
+    color: red;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-cancel {
+    border: 0;
+    border-radius: .25em;
+    background: initial;
+    background-color: blue;
+    color: #fff;
+    font-size: 1em;
+}
+
+div:where(.swal2-icon).swal2-info {
+    border-color: #9de0f6;
+    color: blue;
+}
+
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+    border: 0;
+    border-radius: .25em;
+    background: initial;
+    background-color: blue;
+    color: #fff;
+    font-size: 1em;
+}
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+    border: 0;
+    border-radius: .25em;
+    background: initial;
+    background-color: blue;
+    color: #fff;
+    font-size: 1em;
+}
 
 /* --------- Media queries */
 @media screen and (max-width: 600px){
@@ -294,7 +332,7 @@ button:hover, button#quitGame:hover {
         top: 110px;
         right: auto;
         padding:10px;
-        color: #DA2528;
+        color: blue;
     }
  
     form#guessForm {
@@ -478,7 +516,7 @@ button:hover, button#quitGame:hover {
         top: 200px;
         right: auto;
         padding:10px;
-        color: #DA2528;
+        color: blue;
     }
 
     #highScoresList {  
