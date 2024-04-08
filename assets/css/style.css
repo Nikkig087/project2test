@@ -126,7 +126,7 @@ input[type="text"] {
 }
 
 button {
-    background-color: #DA2528;
+    background-color: #3061E3;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -149,7 +149,7 @@ button {
 
 button#quitGame {
     
-        background-color: #DA2528;
+        background-color: #3061E3;
         color: #fff;
         border: none;
         padding: 10px 20px;
@@ -164,7 +164,7 @@ button#quitGame {
 
 
 button:hover, button#quitGame:hover {
-    background-color: #3061E3;
+    background-color: #DA2528;
 }
 
 #message {
