@@ -133,6 +133,7 @@ button {
     margin-top: 10px;
     cursor: pointer;
     border-radius: 5px;
+    font-size: 14pt bold;
 }
 
 #loggedInUser {
@@ -156,6 +157,7 @@ button#quitGame {
         cursor: pointer;
         border-radius: 5px;
         /*position: static;*/
+        font-size: 14pt bold;
         
     
 }
