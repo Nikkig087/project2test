@@ -37,18 +37,37 @@ The fonts used were bright and bold to emphazise the fun aspect of the game. The
 
 
 - [Abril Fatface](https://fonts.google.com/specimen/Abril+Fatface) 
-- [Comic Sans MS] (https://freefonts.co/fonts/comic-sans-ms-regular)
+- [Comic Sans MS](https://freefonts.co/fonts/comic-sans-ms-regular)
 - [sans-serif](https://www.myfonts.com/pages/sans-serif-fonts)
 
 
 
 ## Wireframes
-### Desktop and Mobile User Login Page
-![Desktop User Login Wireframe](docs/wireframes/login_screen.png) <&nbsc>  ![Mobile User Login Wireframe](docs/wireframes/mobile_login.png)
 
 
-### Desktop and Mobile Subpages
-![Desktop Subpages Wireframe](docs/wireframes/subpages.webp)  ![Mobile Subpages Wireframe](docs/wireframes/mobile-subpage.webp)
+## Desktop User Login Page and Mobile User Login Page
+<img src="docs/wireframes/login_screen.png" alt="Desktop User Login Wireframe" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_login.png" alt="Mobile User Login Wireframe" height="400px"><br><br><br><br>
+
+## Game Rules Popup following Username Entry
+<img src="docs/wireframes/game_rules_login.png" alt="Game Rules Login Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_login_rules.png" alt="Game Rules Login Mobile" height="400px"><br><br><br><br>
+
+## Game Page on Desktop and Mobile 
+<img src="docs/wireframes/guess_game.png" alt="Game Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_game.png" alt="Game Mobile" height="400px"><br><br><br><br>
+
+## Correct Answer on Desktop and Mobile 
+<img src="docs/wireframes/correct_answer.png" alt="Correct Answer Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_correct_answer.png" alt="Correct Answer Mobile" height="400px"><br><br><br><br>
+
+## Incorrect Answer on Desktop and Mobile 
+<img src="docs/wireframes/wrong_guess.png" alt="Wrong Answer Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_wrong_guess.png" alt="Wrong Answer Mobile" height="400px"><br><br><br><br>
+
+## Game Over Desktop and Mobile 
+<img src="docs/wireframes/game_over.png" alt="Game Over Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_game_over.png" alt="Game Over Mobile" height="400px"><br><br><br><br>
+
+## Quit Game Desktop and Mobile 
+<img src="docs/wireframes/quit_game.png" alt="Quit Game Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_quit.png" alt="Quit Game Mobile" height="400px"><br><br><br><br>
+
+## High Scores Desktop and Mobile 
+<img src="docs/wireframes/high_scores.png" alt="High Scores Table Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_high_scores.png" alt="High Scores Table Mobile" height="400px"><br><br><br><br>
 
 
 ### Existing Features
@@ -88,13 +107,13 @@ The fonts used were bright and bold to emphazise the fun aspect of the game. The
 
 Character Repetition: Initially, there was an issue where characters could repeat consecutively, affecting the game's randomness. However, I was able to resolve this by looping through the selection process until a different character is picked. Once a new character is selected, its image is displayed, and its name is stored as the current character. This prevents repetition and ensures a fresh character is always shown.
 
-![New Character Loop](docs/images/newCharacter-loop.png)
+![New Character Loop](docs/images/new_character_loop.png)
 
 
 Quit Button Functionality: Implementing the quit button to return to the login screen was a challenge initially. However, thorough testing and debugging resolved this issue, and now the quit button function resets all relevant game variables and UI elements to their initial states, effectively restarting the game.
 
 
-![Quit Game Functionality](docs/images/quitGame.png)
+![Quit Game Functionality](docs/images/quit_function.png)
 
 
 ### Validator Testing 
