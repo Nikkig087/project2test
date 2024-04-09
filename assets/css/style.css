@@ -13,6 +13,10 @@ html, body {
     height: 100%;
 }
 
+#parent-container {
+    height: 100%;
+}
+
 #topScoresForm {
     display: none;
 }
@@ -436,17 +440,21 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
 
     html, body {
         font-family: 'Comic Sans MS', cursive, sans-serif;
-        background-image: url(../images/sonic_tablet.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+       
         margin: 0;
         padding: 0;
-        height: 104vh;
-    }
-    body.swal2-height-auto {
-        height:0;
+       
     }
     
+#parent-container {
+    height: 120vh;
+    background-image: url(../images/sonic_tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding-top: 20px;
+}
+   
   
     .loginContainer {
         flex-direction: column;
@@ -455,11 +463,12 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
         margin: 0;
     }
 
-    #gameContainer {
+    #gameContainer.gameContainer {
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
         margin: 0;
+       
     }
     #gameArea{
         background-color: #F6C883;
@@ -504,7 +513,7 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
         background-size: cover;
         margin: 0;
         padding: 0;
-        height: 100%;
+        height: 104vh;
     }
  
     .loginContainer {
@@ -519,6 +528,7 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
         align-items: center;
         flex-wrap: wrap;
         margin: 0;
+        height: 104vh;
     }
     #gameArea{
         background-color: #F6C883;
