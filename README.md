@@ -122,18 +122,18 @@ body.swal2-height-auto {
     height: auto !important;
 }
 
-resulted in duplication of the background image when a popup was initated.  The resolution involved downloading the JavaScript file from https://cdn.jsdelivr.net/npm/sweetalert2@11 and saving it as sweetalert2@11.js, then updating the height to be:
+resulted in duplication of the background image when a popup was initated.  The resolution involved adding a new style rule to the style.css documentation.  In order not to have this style rule overwritten, the stylesheet was loaded following the sweet alert script in the head section of the index.html page.
 
-body.swal2-height-auto {
-    height: 0 !important;
+body .swal2-height-auto {
+    height: 80vh;
 }
 
-I had to then place the in the head of the index.html file whilst also keeping the  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> to ensure all other functionality involved in the Sweet Alert pop-up was not impacted.
 
 
 ![image before code update](docs/images/game_over_desktop_double_screen.png) 
 
 ![image after code update]()
+
 ### Validator Testing 
 
 - HTML

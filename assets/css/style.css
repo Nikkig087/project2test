@@ -5,7 +5,7 @@
 }
 html, body {
     font-family: 'Comic Sans MS', cursive, sans-serif;
-    background-image: url(../images/sonic_big_background.jpg);
+    background-image: url(../images/sonic_big_background.webp);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -342,7 +342,7 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
 @media screen and (max-width: 600px){
     html, body {
         font-family: 'Comic Sans MS', cursive, sans-serif;
-       /* background-image: url(../images/sonic_mobile.jpg);*/
+     
         background-repeat: no-repeat;
         background-size: cover;
         margin: 0;
@@ -450,7 +450,7 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
     
 #parent-container {
     
-    background-image: url(../images/sonic_tablet.jpg);
+    background-image: url(../images/sonic_tablet.webp);
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -459,7 +459,7 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
 }
    
 body .swal2-height-auto {
-    height: 80vh; /* Adjust the height as needed */
+    height: 80vh;
 }
 
   
@@ -515,7 +515,7 @@ body .swal2-height-auto {
 
     html, body {
         font-family: 'Comic Sans MS', cursive, sans-serif;
-        background-image: url(../images/sonic_big_background.jpg);
+        background-image: url(../images/sonic_big_background.webp);
         background-repeat: no-repeat;
         background-size: cover;
         margin: 0;
@@ -531,7 +531,7 @@ body .swal2-height-auto {
     }
     #parent-container {
     
-        background-image: url(../images/sonic_tablet.jpg);
+        background-image: url(../images/sonic_tablet.webp);
         background-repeat: no-repeat;
         background-size: cover;
         overflow: hidden;

@@ -23,11 +23,11 @@ function goToIndex() {
 
 function displayCharacter() {
     const characters = [
-        { name: "Bart", image: "bart.png" },
-        { name: "Sonic", image: "sonic.png" },
-        { name: "Spongebob", image: "spongebob.png" },
-        { name: "Mickey", image: "mickey.png" },
-        { name: "Simba", image: "simba.png" }
+        { name: "Bart", image: "bart.webp"},
+        { name: "Sonic", image: "sonic.webp" },
+        { name: "Spongebob", image: "spongebob.webp" },
+        { name: "Mickey", image: "mickey.webp" },
+        { name: "Simba", image: "simba.webp" }
     ];
 
     let newCharacter;
