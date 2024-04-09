@@ -438,6 +438,8 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
 
 @media screen and (min-width: 768px) {
 
+
+
     html, body {
         font-family: 'Comic Sans MS', cursive, sans-serif;
        
@@ -453,8 +455,13 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
     background-size: cover;
     overflow: hidden;
     padding-top: 20px;
+    height: 110vh;
 }
    
+body .swal2-height-auto {
+    height: 80vh; /* Adjust the height as needed */
+}
+
   
     .loginContainer {
         flex-direction: column;
