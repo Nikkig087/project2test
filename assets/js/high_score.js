@@ -1,6 +1,11 @@
+function goToIndex() {
+    window.location.href = "index.html";
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("backButton").addEventListener("click", goToIndex);
 });
+
 
 
 document.addEventListener("DOMContentLoaded", function () {

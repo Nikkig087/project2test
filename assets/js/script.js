@@ -232,6 +232,7 @@ function quitGame() {
     }
 });
 }
+
     
 // Event listeners
 
@@ -239,6 +240,22 @@ document.getElementById("guessForm").addEventListener("submit", function(event) 
     event.preventDefault();
     checkGuess();
 });
+
+
+
+
+document.getElementById("labelA").addEventListener("click", function() {
+    document.getElementById("guessA").checked = true;
+});
+
+document.getElementById("labelB").addEventListener("click", function() {
+    document.getElementById("guessB").checked = true;
+});
+
+document.getElementById("labelC").addEventListener("click", function() {
+    document.getElementById("guessC").checked = true;
+});
+
 document.getElementById("quitGame").addEventListener("click", quitGame);
 
 document.getElementById("usernameForm").addEventListener("submit", startGame);
