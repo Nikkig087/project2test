@@ -10,10 +10,12 @@ let username;
 let currentCharacter;
 let previousCharacter;
 
+
 document.addEventListener("DOMContentLoaded", function() {
-    
-document.getElementById("backButton").addEventListener("click", goToIndex);
+    document.getElementById("backButton").addEventListener("click", goToIndex);
 });
+
+
 
 
 function goToIndex() {
@@ -135,17 +137,26 @@ function checkGuess() {
  
     document.getElementById("correctAnswers").textContent = `Correct answers: ${correctAnswers}`;
 }
+
+
 document.addEventListener("DOMContentLoaded", function () {
     displayHighScores();
 });
 
 
 function displayHighScores() {
-    const highScoresList = document.getElementById("highScoresList");
-    const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+   
 
-  
-    highScoresList.innerHTML ="";
+    const highScoresList = document.getElementById("highScoresList");
+    if (!highScoresList) {
+        console.error("highScoresList element not found.");
+        return;
+    }
+
+    const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+    // Clear the existing content of the list
+    highScoresList.innerHTML = "";
+   
     
     const heading = document.createElement("h1");
     heading.textContent = "High Scores";
