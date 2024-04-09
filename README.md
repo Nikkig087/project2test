@@ -2,7 +2,7 @@
 
 This interactive game challenges players to guess the names of various characters from classic animated series which may envoke some childhood memories. 
 
-![Responsice Test](docs/images/responsive_test.JPG)
+![Responsive Test](docs/images/responsive_test.webp)
 
 
 # User Stories
@@ -29,7 +29,7 @@ This interactive game challenges players to guess the names of various character
 ## The Colour Scheme
 The color scheme used was based on the Super Mario Sonic the Hedgehog game.  The colours used are bright and fun.
 
-![Colour Scheme](docs/images/sonic_the_hedgehog_by_schemecolor.png)
+![Colour Scheme](docs/images/sonic_the_hedgehog_by_schemecolor.webp)
 
 ## The Fonts Used
 
@@ -46,28 +46,28 @@ The fonts used were bright and bold to emphazise the fun aspect of the game. The
 
 
 ## Desktop User Login Page and Mobile User Login Page
-<img src="docs/wireframes/login_screen.png" alt="Desktop User Login Wireframe" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_login.png" alt="Mobile User Login Wireframe" height="400px"><br><br><br><br>
+<img src="docs/wireframes/login_screen.webp" alt="Desktop User Login Wireframe" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_login.webp" alt="Mobile User Login Wireframe" height="400px"><br><br><br><br>
 
 ## Game Rules Popup following Username Entry
-<img src="docs/wireframes/game_rules_login.png" alt="Game Rules Login Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_login_rules.png" alt="Game Rules Login Mobile" height="400px"><br><br><br><br>
+<img src="docs/wireframes/game_rules_login.webp" alt="Game Rules Login Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_login_rules.webp" alt="Game Rules Login Mobile" height="400px"><br><br><br><br>
 
 ## Game Page on Desktop and Mobile 
-<img src="docs/wireframes/guess_game.png" alt="Game Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_game.png" alt="Game Mobile" height="400px"><br><br><br><br>
+<img src="docs/wireframes/guess_game.webp" alt="Game Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_game.webp" alt="Game Mobile" height="400px"><br><br><br><br>
 
 ## Correct Answer on Desktop and Mobile 
-<img src="docs/wireframes/correct_answer.png" alt="Correct Answer Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_correct_answer.png" alt="Correct Answer Mobile" height="400px"><br><br><br><br>
+<img src="docs/wireframes/correct_answer.webp" alt="Correct Answer Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_correct_answer.webp" alt="Correct Answer Mobile" height="400px"><br><br><br><br>
 
 ## Incorrect Answer on Desktop and Mobile 
-<img src="docs/wireframes/wrong_guess.png" alt="Wrong Answer Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_wrong_guess.png" alt="Wrong Answer Mobile" height="400px"><br><br><br><br>
+<img src="docs/wireframes/wrong_guess.webp" alt="Wrong Answer Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_wrong_guess.webp" alt="Wrong Answer Mobile" height="400px"><br><br><br><br>
 
 ## Game Over Desktop and Mobile 
-<img src="docs/wireframes/game_over.png" alt="Game Over Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_game_over.png" alt="Game Over Mobile" height="400px"><br><br><br><br>
+<img src="docs/wireframes/game_over.webp" alt="Game Over Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_game_over.webp" alt="Game Over Mobile" height="400px"><br><br><br><br>
 
 ## Quit Game Desktop and Mobile 
-<img src="docs/wireframes/quit_game.png" alt="Quit Game Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_quit.png" alt="Quit Game Mobile" height="400px"><br><br><br><br>
+<img src="docs/wireframes/quit_game.webp" alt="Quit Game Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_quit.webp" alt="Quit Game Mobile" height="400px"><br><br><br><br>
 
 ## High Scores Desktop and Mobile 
-<img src="docs/wireframes/high_scores.png" alt="High Scores Table Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_high_scores.png" alt="High Scores Table Mobile" height="400px"><br><br><br><br>
+<img src="docs/wireframes/high_scores.webp" alt="High Scores Table Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_high_scores.webp" alt="High Scores Table Mobile" height="400px"><br><br><br><br>
 
 
 ### Existing Features
@@ -107,13 +107,13 @@ The fonts used were bright and bold to emphazise the fun aspect of the game. The
 
 Character Repetition: Initially, there was an issue where characters could repeat consecutively, affecting the game's randomness. However, I was able to resolve this by looping through the selection process until a different character is picked. Once a new character is selected, its image is displayed, and its name is stored as the current character. This prevents repetition and ensures a fresh character is always shown.
 
-![New Character Loop](docs/images/new_character_loop.png)
+![New Character Loop](docs/images/new_character_loop.webp)
 
 
 Quit Button Functionality: Implementing the quit button to return to the login screen was a challenge initially. However, thorough testing and debugging resolved this issue, and now the quit button function resets all relevant game variables and UI elements to their initial states, effectively restarting the game.
 
 
-![Quit Game Functionality](docs/images/quit_function.png)
+![Quit Game Functionality](docs/images/quit_function.webp)
 
 
 Sweet Alert functionality in Script.js: The following element detailed on https://cdn.jsdelivr.net/npm/sweetalert2@11: 
@@ -129,10 +129,12 @@ body .swal2-height-auto {
 }
 
 
+#### Image Before Code Update
+![image before code update](docs/images/game_over_desktop_double_screen.webp) 
 
-![image before code update](docs/images/game_over_desktop_double_screen.png) 
 
-![image after code update]()
+#### Image After Code Update
+![image after code update](docs/screenshots/game_over_desktop.webp)
 
 ### Validator Testing 
 
@@ -165,17 +167,17 @@ You can break the credits section up into Content and Media, depending on what y
 
 ### Content 
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- ![w3 schools](https://www.w3schools.com/js/DEFAULT.asp) was utilized for some of the JavaScript funtionality.
+- I have previous experience utilizing Sweet Alert, however I did still need to refer to ![Sweet Alert Guidance](https://sweetalert.js.org/) to refresh myself.
+- The images used were downloaded from 
 
 ### Media
 
-- The photos used on the home and sign up page are from This Open Source site
-- The images used for the gallery page were taken from this other open source site
+- The character images used for the game were taken from ![Download Cartoon Free PNG photo images and clipart](https://freepngimg.com/cartoon)
+- The images used for the mobile, tablet and desktop backgrounds were taken from ![Wallpapercrafter](https://wallpapercrafter.com/1777017-sonic-sonic-generations-generations-sonic-the-hedgehog.html#google_vignette)
 
 
-Congratulations on completing your Readme, you have made another big stride in the direction of being a developer! 
+
 
 ## Other General Project Advice
 
