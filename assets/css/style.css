@@ -17,6 +17,10 @@ html, body {
     display: none;
 }
 
+td {
+    padding-left: 20px;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -219,7 +223,7 @@ button:hover, button#quitGame:hover {
     /*justify-content: center;
     /*align-items: center;*/
     height: 50%;
-    width: 50%;
+    width: 29%;
     background-color:  #F6C883;
     text-align: justify;
     padding: 2%;
@@ -230,6 +234,7 @@ button:hover, button#quitGame:hover {
 
 .table th {
     background-color: #f2f2f2; 
+   text-align: center;
 }
 
 .table tr:nth-child(even) {

@@ -10,7 +10,7 @@ let previousCharacter;
 
 document.addEventListener("DOMContentLoaded", function() {
     
-    document.getElementById("backButton").addEventListener("click", goToIndex);
+document.getElementById("backButton").addEventListener("click", goToIndex);
 });
 
 
@@ -138,7 +138,7 @@ function displayHighScores() {
     const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
   
-    highScoresList.innerHTML = "";
+    highScoresList.innerHTML ="";
     
     const heading = document.createElement("h1");
     heading.textContent = "High Scores";
