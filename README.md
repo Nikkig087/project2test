@@ -116,6 +116,24 @@ Quit Button Functionality: Implementing the quit button to return to the login s
 ![Quit Game Functionality](docs/images/quit_function.png)
 
 
+Sweet Alert functionality in Script.js: The following element detailed on https://cdn.jsdelivr.net/npm/sweetalert2@11: 
+
+body.swal2-height-auto {
+    height: auto !important;
+}
+
+resulted in duplication of the background image when a popup was initated.  The resolution involved downloading the JavaScript file from https://cdn.jsdelivr.net/npm/sweetalert2@11 and saving it as sweetalert2@11.js, then updating the height to be:
+
+body.swal2-height-auto {
+    height: 0 !important;
+}
+
+I had to then place the in the head of the index.html file whilst also keeping the  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> to ensure all other functionality involved in the Sweet Alert pop-up was not impacted.
+
+
+![image before code update](docs/images/game_over_desktop_double_screen.png) 
+
+![image after code update]()
 ### Validator Testing 
 
 - HTML

@@ -2,6 +2,8 @@
 
 /* global swal */
 
+
+
 let lifes = 3;
 let correctAnswers = 0;
 let username;
@@ -72,6 +74,11 @@ function startGame(event) {
             html: `${capitalizedUsername} for each Character Image to guess you have three lifes. <br>Loose all your life's for that guess and its Game Over!!!`,
             icon: 'info',
             confirmButtonText: 'Lets Go!!!',
+            width: '600px', // Adjust the width as needed
+            padding: '1em', // Adjust the padding as needed
+          
+           
+            
            
           });
         document.getElementById("loggedInUser").textContent = `Logged in as: ${username}`;

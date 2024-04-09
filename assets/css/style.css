@@ -232,6 +232,12 @@ button:hover, button#quitGame:hover {
     opacity: 0.8;
 }
 
+body.swal2-height-auto {
+    height: 100vh !important;
+}
+
+
+
 .table th {
     background-color: #f2f2f2; 
    text-align: center;
@@ -244,7 +250,7 @@ button:hover, button#quitGame:hover {
 .table tr:hover {
     background-color: #f5f5f5; 
 }
-
+/*
 div:where(.swal2-icon) .swal2-icon-content {
     display: flex;
     align-items: center;
@@ -316,7 +322,7 @@ div:where(.swal2-icon).swal2-info {
     background-color: blue;
     color: #fff;
     font-size: 1em;
-}*/
+}
 
 div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
     border: 0;
@@ -325,18 +331,22 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
     background-color: blue;
     color: #fff;
     font-size: 1em;
-}
+}*/
+
 
 /* --------- Media queries */
 @media screen and (max-width: 600px){
     html, body {
         font-family: 'Comic Sans MS', cursive, sans-serif;
-        background-image: url('../images/sonic_mobile.jpg');
+       /* background-image: url(../images/sonic_mobile.jpg);*/
         background-repeat: no-repeat;
         background-size: cover;
         margin: 0;
         padding: 0;
-        
+        height: 120vh;
+    }
+    body.swal2-height-auto {
+        height:0;
     }
     
     .gameContainer {
@@ -344,8 +354,7 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
         flex-direction: column;
         align-items: center;
         margin: 0;
-        background-image: url('../images/sonic_mobile.jpg');
-        height: 100%;
+      
     }
 
     #gameArea{
@@ -431,8 +440,12 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
         background-size: cover;
         margin: 0;
         padding: 0;
-        height: 100%;
+        height: 104vh;
     }
+    body.swal2-height-auto {
+        height:0;
+    }
+    
   
     .loginContainer {
         flex-direction: column;
@@ -476,6 +489,7 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
         margin: 0 auto;
         text-align: center; 
     }
+    
  
 }
 
