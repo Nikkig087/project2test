@@ -447,7 +447,7 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
     }
     
 #parent-container {
-    height: 120vh;
+    
     background-image: url(../images/sonic_tablet.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -521,6 +521,14 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
         align-items: center;
         flex-wrap: wrap;
         margin: 0;
+    }
+    #parent-container {
+    
+        background-image: url(../images/sonic_tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        padding-top: 20px;
     }
 
     #gameContainer {
