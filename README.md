@@ -93,7 +93,8 @@ The fonts used were bright and bold to emphazise the fun aspect of the game. The
 2. **Start Game**: After entering their username, users can click on the "Start Game" button to begin.
 3. **Guessing Characters**: Users are presented with an image of a Cartoon Character and a list of possible answers to choose from.
 4. **Check Guess**: After selecting the radio button with the possible correct guess, userslivesclick on the "Check" button to submit their answer and receive feedback.
-5. **Game Progress**: Users are given three lives to begin with, each wrong guess for a single Character means a life is lost.  If the User guesses correctly for that Cartoon Character before they have lost all three lifes then the lifes are reset on the next image shown. They can continue guessing characters until they loose all their lives or correctly identify all characters or decide to quit the game.
+5. **Game Progress**: Users are given two lives to begin with, each wrong guess for a single Character means a life is lost.  If the User guesses correctly for that Cartoon Character before they have lost all two lifes then the lifes are reset on the next image shown. They can continue guessing characters until they loose all their lives or correctly identify all characters or decide to quit the game.
+6. **High Scores**: Users can view the current Top Scores to see who they need to beat before they begin.  This adds an element of competiton to the game.  When a User correctly guess's all the Characters and finishes the game or looses their life's during game play, their Highest Score is recorded to the High Scores table on the high_scores.html page.
 
 ### Future Features
 

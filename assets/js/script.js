@@ -4,7 +4,7 @@
 
 
 
-let lifes = 3;
+let lifes = 2;
 let correctAnswers = 0;
 let username;
 let currentCharacter;
@@ -20,10 +20,21 @@ function goToIndex() {
 
 const characters = [
     { name: "Bart", image: "bart.webp"},
-    { name: "Sonic", image: "sonic.webp" },
+    { name: "Sonic", image: "sonic.webp"},
+    { name: "Simba", image: "simba.webp"},
+    { name: "Yoshi", image: "yoshi.webp"},
+    { name: "Papa Smurf", image: "papa_smurf.webp"},
+    { name: "Clumsy Smurf", image: "clumsy_smurf.webp"},
+    { name: "Cinderella", image: "cinderella.webp"},
+    { name: "Princess Aurora", image: "princess_aurora.webp"},
     { name: "Spongebob", image: "spongebob.webp" },
     { name: "Mickey", image: "mickey.webp" },
-    { name: "Simba", image: "simba.webp" }
+    { name: "Cyclops", image: "cyclops.webp" },
+    { name: "Wolverine", image: "wolverine.webp"},
+    { name: "Black Widdow", image: "black_widow.webp"},
+    { name: "Spider Woman", image: "spider_woman.webp"}
+
+
 ];
 let guessedCharacters = [];
 
@@ -73,7 +84,7 @@ function startGame(event) {
     if (username) {
         swal.fire({
             title: 'Game Rules',
-            html: `${capitalizedUsername} for each Character Image to guess you have three lifes. <br>Loose all your life's for that guess and its Game Over!!!`,
+            html: `${capitalizedUsername} for each Character Image to guess you have two lifes. <br>Loose all your life's for that guess and its Game Over!!!`,
             icon: 'info',
             confirmButtonText: 'Lets Go!!!',
             width: '600px', // Adjust the width as needed
@@ -90,7 +101,7 @@ function startGame(event) {
         document.getElementById("quitGame").classList.remove("hidden"); 
         document.getElementById("gameHead").classList.remove("hidden"); 
         document.getElementById("header").classList.add("hidden");
-        lifes = 3;
+        lifes = 2;
         correctAnswers = 0; 
         document.getElementById("loggedInUser").classList.remove("hidden");
         document.getElementById("message").textContent = "";
@@ -122,7 +133,7 @@ function checkGuess() {
             attemptsDisplay.textContent = ""; 
         }, 2000);
         correctAnswers++;
-        lifes = 3;
+        lifes = 2;
     } else {
         lifes--;
         message.textContent = `Wrong guess, ${capitalizedUsername}! Try again.`;
@@ -158,7 +169,7 @@ function gameOver() {
     
     swal.fire({
         title: 'Game Over',
-        html: `${capitalizedUsername}, you're out. Your score was ${correctAnswers}. Do you want to play again?`,
+        html: `${capitalizedUsername}, you've finished. Your score was ${correctAnswers}. Do you want to play again?`,
         icon: 'error',
         showCancelButton: true,
         confirmButtonText: 'Yes',
@@ -168,7 +179,7 @@ function gameOver() {
             // Reset game state
             guessedCharacters = [];
             correctAnswers = 0;
-            lifes = 3;
+            lifes = 2;
             document.getElementById("correctAnswers").textContent = ""; // Clear correct answers display
             document.getElementById("message").textContent = "";
             document.getElementById("attempts").textContent = "";
@@ -178,7 +189,7 @@ function gameOver() {
             // Reset game state and return to initial state
             guessedCharacters = [];
             correctAnswers = 0; 
-            lifes = 3;
+            lifes =2;
             document.getElementById("message").textContent = "";
             document.getElementById("attempts").textContent = "";
             document.getElementById("correctAnswers").textContent = ""; 
@@ -209,7 +220,7 @@ function quitGame() {
     }).then((result) => {
         if (result.isConfirmed) {
             
-            lifes = 3; // 
+            lifes = 2; // 
             correctAnswers = 0;
            
             
