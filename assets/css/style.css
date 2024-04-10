@@ -342,6 +342,8 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
     background-image: url(../images/holiday.jpg);
     background-size: cover;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 #hol_container {
     text-align: center;
