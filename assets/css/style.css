@@ -338,31 +338,6 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
 }*/
 
 
-#holiday {
-    background-image: url(../images/holiday.jpg);
-    background-size: cover;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-#hol_container {
-    text-align: center;
-   
-    padding: 20px;
-    background-color: white;
-    width: 90%;
-    margin: 50px auto;
-   
-    background-color: #F6C883;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
-    max-width: 550px;
-    width: auto;
-    color: blue;
-    opacity: 0.9;
-    font-size: large;
-}
 
 
 /* --------- Media queries */
