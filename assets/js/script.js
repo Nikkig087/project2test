@@ -18,46 +18,50 @@ function goToIndex() {
     window.location.href = "index.html";
 }
 
+const characters = [
+    { name: "Bart", image: "bart.webp"},
+    { name: "Sonic", image: "sonic.webp" },
+    { name: "Spongebob", image: "spongebob.webp" },
+    { name: "Mickey", image: "mickey.webp" },
+    { name: "Simba", image: "simba.webp" }
+];
+let guessedCharacters = [];
 
 function displayCharacter() {
-    const characters = [
-        { name: "Bart", image: "bart.webp"},
-        { name: "Sonic", image: "sonic.webp" },
-        { name: "Spongebob", image: "spongebob.webp" },
-        { name: "Mickey", image: "mickey.webp" },
-        { name: "Simba", image: "simba.webp" }
-    ];
+    if (guessedCharacters.length === characters.length) {
+        gameOver(); // All characters have been guessed, end the game
+        return;
+    }
 
     let newCharacter;
-
     do {
         newCharacter = characters[Math.floor(Math.random() * characters.length)];
-    } while (newCharacter.name === previousCharacter);
+    } while (guessedCharacters.includes(newCharacter));
 
-    previousCharacter = newCharacter.name;
+    guessedCharacters.push(newCharacter);
 
     document.getElementById("characterImg").src = "assets/images/" + newCharacter.image;
     currentCharacter = newCharacter.name;
 
-    const correctCharacter = newCharacter;
-    const incorrectCharacters = characters.filter(character => character !== correctCharacter);
+    const options = [newCharacter.name]; // Add the correct answer
 
-   
-    const correctIndex = Math.floor(Math.random() * 3);
+    const incorrectCharacters = characters.filter(character => character !== newCharacter);
 
+    while (options.length < 3) {
+        const randomCharacter = incorrectCharacters[Math.floor(Math.random() * incorrectCharacters.length)].name;
+        if (!options.includes(randomCharacter)) {
+            options.push(randomCharacter);
+        }
+    }
+
+    options.sort(() => Math.random() - 0.5); // Shuffle options
 
     for (let i = 0; i < 3; i++) {
         const radioBtn = document.getElementById(`guess${String.fromCharCode(65 + i)}`);
         const label = document.querySelector(`label[for=guess${String.fromCharCode(65 + i)}]`);
 
-        if (i === correctIndex) {
-            radioBtn.value = correctCharacter.name;
-            label.textContent = correctCharacter.name;
-        } else {
-            const incorrectCharacter = incorrectCharacters.pop(); 
-            radioBtn.value = incorrectCharacter.name;
-            label.textContent = incorrectCharacter.name;
-        }
+        radioBtn.value = options[i];
+        label.textContent = options[i];
     }
 }
 
@@ -133,7 +137,6 @@ function checkGuess() {
  
     document.getElementById("correctAnswers").textContent = `Correct answers: ${correctAnswers}`;
 }
-
 function gameOver() {
     username = document.getElementById("usernameInput").value.trim();
     const capitalizedUsername = username.charAt(0).toUpperCase() + username.slice(1);
@@ -144,12 +147,10 @@ function gameOver() {
     const existingUserIndex = highScores.findIndex(score => score.username === username);
     
     if (existingUserIndex !== -1) {
-     
         if (correctAnswers > highScores[existingUserIndex].score) {
             highScores[existingUserIndex].score = correctAnswers;
         }
     } else {
-     
         highScores.push({ username: username, score: correctAnswers });
     }
     
@@ -164,18 +165,20 @@ function gameOver() {
         cancelButtonText: 'No'
     }).then((result) => {
         if (result.isConfirmed) {
-           
-            lifes = 3;
+            // Reset game state
+            guessedCharacters = [];
             correctAnswers = 0;
+            lifes = 3;
             document.getElementById("correctAnswers").textContent = ""; // Clear correct answers display
             document.getElementById("message").textContent = "";
             document.getElementById("attempts").textContent = "";
             document.querySelectorAll('input[name="character"]').forEach(input => input.checked = false);
             displayCharacter(); 
         } else {
-           
-            lifes = 3; 
+            // Reset game state and return to initial state
+            guessedCharacters = [];
             correctAnswers = 0; 
+            lifes = 3;
             document.getElementById("message").textContent = "";
             document.getElementById("attempts").textContent = "";
             document.getElementById("correctAnswers").textContent = ""; 
@@ -191,6 +194,7 @@ function gameOver() {
         }
     });
 }
+
 
 function quitGame() {
     username = document.getElementById("usernameInput").value.trim();
