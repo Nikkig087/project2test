@@ -343,7 +343,7 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
     background-size: cover;
     height: 100%;
 }
-#holiday p {
+#hol_container {
     text-align: center;
    
     padding: 20px;
