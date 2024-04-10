@@ -337,6 +337,9 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
     font-size: 1em;
 }*/
 
+#holiday{
+    background-image: url(../images/holiday.jpg)
+}
 
 /* --------- Media queries */
 @media screen and (max-width: 600px){
