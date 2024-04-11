@@ -37,7 +37,7 @@ h1.text-center.mb-4{
 
 
 .table th {
-    background-color: red; 
+    background-color: lightblue; 
    text-align: center;
 }
 
@@ -50,20 +50,7 @@ h1.text-center.mb-4{
 }
 
 
-#highScoresList{
-    display: flex;
-    flex-direction: column;
-    /*justify-content: center;
-    /*align-items: center;*/
-    height: 50%;
-    width: 29%;
-    background-color:  #F6C883;
-    text-align: justify;
-    padding: 2%;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
-    opacity: 0.8;
-}
+
 
 
 /* Style for Login Container on index.html page*/
@@ -252,6 +239,20 @@ button:hover, button#quitGame:hover {
     
     text-align: left;
 }
+#highScoresList{
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;
+    /*align-items: center;*/
+    height: 60%;
+    width: 40%;
+    background-color:  #F6C883;
+    text-align: justify;
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
+    opacity: 0.8;
+}
 
 /* Sweet Alert Style*/
 body.swal2-height-auto {
@@ -282,8 +283,21 @@ body.swal2-height-auto {
     }
 
     /*High Scores Area */
-    #highScoresList {  
-        width: 80%;
+  
+
+    #highScoresList{
+        display: flex;
+        flex-direction: column;
+        /*justify-content: center;
+        /*align-items: center;*/
+        height: 80%;
+        width: 70%;
+        background-color:  #F6C883;
+        text-align: justify;
+        padding: 2%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
+        opacity: 0.8;
     }
 }
 
@@ -295,7 +309,7 @@ body.swal2-height-auto {
         background-size: cover;
         margin: 0;
         padding: 0;
-        height: 135vh;
+        height: 100vh;
     }
    
    /* Game Area Style */ 
@@ -380,6 +394,21 @@ body.swal2-height-auto {
         width: 80%;
         margin: 0 auto; /* Center horizontally */
         text-align: center; /* Center text */
+    }
+
+    #highScoresList{
+        display: flex;
+        flex-direction: column;
+        /*justify-content: center;
+        /*align-items: center;*/
+        height: 80%;
+        width: 70%;
+        background-color:  #F6C883;
+        text-align: justify;
+        padding: 2%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
+        opacity: 0.8;
     }
 }
 

@@ -177,19 +177,29 @@ body .swal2-height-auto {
 ### Login and Game Pages
 
 - HTML
-  - No errors were returned when passing through the official ![W3C validator](docs/testing/w3c_html_validator.webp)
+  - No errors were returned when passing through the official W3C Validator ![W3C validator](docs/testing/w3c_html_validator.webp)
 
 - CSS (includes High Score list)
-  - No errors were found when passing through the official ![(Jigsaw) validator](docs/testing/w3c_css_validator.webp)
+  No errors were found when passing through the official Jigsaw W3C CSS Validator. ![(Jigsaw) validator](docs/testing/w3c_css_validator.webp)
 
 - JavaScript
   - No errors were found when passing through the official ![jshint validator](docs/testing/jshint_script.webp)
 
-  ### High Score List
+- Lighthouse and Performance Testing
+  - No errors were found when passing through the official Lighthouse testing <img src="docs/testing/lighthouse_desktop.webp" alt="Lighthouse Desktop Testing" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/testing/lighthouse_mobile.webp" alt="Lighthouse Mobile Testing" height="400px">
+
+- WCAG Testing on Login and Game Pages
+  - No errors were found when passing through the official Lighthouse testing <img src="docs/testing/wcag_login.webp" alt="WCAG Login Page Testing" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/testing/wcag_game.webp" alt="WCAG Game Page Testing" height="400px">
+
+  ### High Score List Page
   - HTML
-    - No errors were returned when passing through the official ![W3C validator](docs/testing/w3c_html_validator.webp)
+    - No errors were returned when passing through the official W3C Validator ![W3C validator](docs/testing/w3c_html_validator.webp)
+
   - JavaScript
-    - No errors were found when passing through the official ![jshint validator](docs/testing/jshint_high_scores.webp)
+    - No errors were found when passing through the official JShint ![jshint validator](docs/testing/jshint_high_scores.webp)
+
+  - WCAG Testing on High Scores Page
+    - No errors were found when passing through the official Lighthouse testing ![wcag](docs/testing/wcag_high_score.webp)
 
 
 ### Unfixed Bugs
@@ -202,18 +212,18 @@ This section should describe the process you went through to deploy the project 
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
   - In the GitHub repository, navigate to the Settings tab 
-  - From the source section drop-down menu, select the Master Branch
-  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+  - From the source section drop-down menu, select the main branch
+  - Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html 
+The live link can be found here - https://nikkig087.github.io/project2test/
 
 
 ## Credits 
 
 ### Content 
 
-- ![w3 schools](https://www.w3schools.com/js/DEFAULT.asp) was utilized for some of the JavaScript funtionality.
-- I have previous experience utilizing Sweet Alert, however I did still need to refer to ![Sweet Alert Guidance](https://sweetalert.js.org/) to refresh myself.
+- [w3 schools](https://www.w3schools.com/js/DEFAULT.asp) was utilized for some of the JavaScript funtionality.
+- I have previous experience utilizing Sweet Alert, however I did still need to refer to [Sweet Alert Guidance](https://sweetalert.js.org/) to refresh myself.
 
 
 ### Media
