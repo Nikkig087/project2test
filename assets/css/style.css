@@ -17,6 +17,7 @@ html, body {
     height: 100%;
 }
 
+/* Style for high_scores.html page*/
 #topScoresForm {
     display: none;
 }
@@ -24,7 +25,48 @@ html, body {
 td {
     padding-left: 20px;
 }
+h1.text-center.mb-4{
+    padding: 2% 0;
+    text-align: center;
+    font-family: "Abril Fatface", Times, serif;
+    font-size:xx-large;
+    color: blue;
+    text-shadow: 4px 4px 5px white;
+}
 
+
+
+.table th {
+    background-color: red; 
+   text-align: center;
+}
+
+.table tr {
+    background-color: #f9f9f9; 
+}
+
+.table tr:hover {
+    background-color: lightskyblue; 
+}
+
+
+#highScoresList{
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;
+    /*align-items: center;*/
+    height: 50%;
+    width: 29%;
+    background-color:  #F6C883;
+    text-align: justify;
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
+    opacity: 0.8;
+}
+
+
+/* Style for Login Container on index.html page*/
 .container {
     display: flex;
     flex-direction: column;
@@ -34,14 +76,7 @@ td {
 
 
 
-h1.text-center.mb-4{
-    padding: 2% 0;
-    text-align: center;
-    font-family: "Abril Fatface", Times, serif;
-    font-size:xx-large;
-    color: blue;
-    text-shadow: 4px 4px 5px white;
-}
+
 .header {
     text-align: center;
     margin:20px;
@@ -58,10 +93,7 @@ h1.text-center.mb-4{
     text-shadow: 4px 4px 5px white;
 }
 
-.header img {
-    width: 100px;
-    display: inline;
-}
+/* Style for Game Area*/
 
 #gameArea{
     background-color: #F6C883;
@@ -221,126 +253,40 @@ button:hover, button#quitGame:hover {
     text-align: left;
 }
 
-#highScoresList{
-    display: flex;
-    flex-direction: column;
-    /*justify-content: center;
-    /*align-items: center;*/
-    height: 50%;
-    width: 29%;
-    background-color:  #F6C883;
-    text-align: justify;
-    padding: 2%;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
-    opacity: 0.8;
-}
-
+/* Sweet Alert Style*/
 body.swal2-height-auto {
     height: 100vh !important;
 }
 
 
 
-.table th {
-    background-color: red; 
-   text-align: center;
-}
-
-.table tr {
-    background-color: #f9f9f9; 
-}
-
-.table tr:hover {
-    background-color: lightskyblue; 
-}
-/*
-div:where(.swal2-icon) .swal2-icon-content {
-    display: flex;
-    align-items: center;
-    font-size: 3.75em;
-    color: red;
-}
-
-div:where(.swal2-icon).swal2-question {
-    border-color: red;
-    color: blue;
-}
-
-div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
-    border: 0;
-    border-radius: 0.25em;
-    background: initial;
-    background-color: blue;
-    color: #fff;
-    font-size: 1em;
-}
-
-div:where(.swal2-container) button:where(.swal2-styled).swal2-cancel {
-    border: 0;
-    border-radius: .25em;
-    background: initial;
-    background-color: red;
-    color: #fff;
-    font-size: 1em;
-}
-
-div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
-    border: 0;
-    border-radius: .25em;
-    background: initial;
-    background-color: blue;
-    color: #fff;
-    font-size: 1em;
-}
-
-div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
-    border: 0;
-    border-radius: .25em;
-    background: initial;
-    background-color: blue;
-    color: #fff;
-    font-size: 1em;
-}
-
-div:where(.swal2-container) button:where(.swal2-styled).swal2-cancel {
-    border: 0;
-    border-radius: .25em;
-    background: initial;
-    background-color: blue;
-    color: #fff;
-    font-size: 1em;
-}
-
-/*
-div:where(.swal2-icon).swal2-info {
-    border-color: red;
-    color: blue;
-}*/
-
-
-/*div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
-    border: 0;
-    border-radius: .25em;
-    background: initial;
-    background-color: blue;
-    color: #fff;
-    font-size: 1em;
-}
-
-div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
-    border: 0;
-    border-radius: .25em;
-    background: initial;
-    background-color: blue;
-    color: #fff;
-    font-size: 1em;
-}*/
-
-
-
 
 /* --------- Media queries */
+
+@media (max-width: 320px) {
+
+    /* Game Area Style */
+    .game-area {
+        height: 70vh;
+    }
+
+    #loggedInUser {
+        background-color: #F6C883;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
+        position: absolute;
+        top: 200px;
+        right: auto;
+        padding:10px;
+        color: blue;
+    }
+
+    /*High Scores Area */
+    #highScoresList {  
+        width: 80%;
+    }
+}
+
 @media screen and (max-width: 600px){
     html, body {
         font-family: 'Comic Sans MS', cursive, sans-serif;
@@ -352,7 +298,7 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
         height: 135vh;
     }
    
-    
+   /* Game Area Style */ 
     .gameContainer {
         display: flex;
         flex-direction: column;
@@ -406,13 +352,6 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
     }
 
  
-    .loginContainer {
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-        margin: 0;
-    
-    }
 
     #gameContainer {
         flex-direction: column;
@@ -428,6 +367,15 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
         margin-left: 0;
     }
 
+
+   /* User loggin Style */
+   .loginContainer {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+
+}
     #usernameForm.form {
         width: 80%;
         margin: 0 auto; /* Center horizontally */
@@ -459,18 +407,26 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
     padding-top: 20px;
     height: 110vh;
 }
-   
+   /* Sweet Alert Style */
 body .swal2-height-auto {
     height: 80vh;
 }
 
-  
+   /* User loggin Style */
     .loginContainer {
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
         margin: 0;
     }
+
+    #usernameForm.form {
+        width: 70%;
+        margin: 0 auto;
+        text-align: center; 
+    }
+    
+    /* Game Area Style */
 
     #gameContainer.gameContainer {
         flex-direction: column;
@@ -503,12 +459,7 @@ body .swal2-height-auto {
         margin-left: 0;
     }
 
-    #usernameForm.form {
-        width: 70%;
-        margin: 0 auto;
-        text-align: center; 
-    }
-    
+ 
  
 }
 
@@ -540,7 +491,7 @@ body .swal2-height-auto {
         padding-top: 20px;
     }
 
-   
+    /* Game Area Style */
     #gameArea{
         background-color: #F6C883;
         border-radius: 10px;
@@ -552,19 +503,21 @@ body .swal2-height-auto {
         align-items: center;
     }
 
-
-    #loggedInUser {
-        margin-bottom: 20px;
-        padding: 10px;
-    }
-
-
     .guessform {
         padding: 0;
         /* max-width: 550px; */
         width: 70%;
     margin-left: 40px;
     }
+
+   /* User loggin Style */
+    #loggedInUser {
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+
+
 
     #usernameForm.form {
         width: 70%;
@@ -574,36 +527,3 @@ body .swal2-height-auto {
  
 }
 
-@media (max-width: 320px) {
-    .game-area {
-        height: 70vh;
-    }
-
-    .controls-area {
-        width: 75%;
-        margin: 10px auto;
-    }
-
-    .btn--big {
-        margin: 10px 10px;
-    }
-
-    .question-area {
-        padding: 10px 0;
-    }
-
-    #loggedInUser {
-        background-color: #F6C883;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
-        position: absolute;
-        top: 200px;
-        right: auto;
-        padding:10px;
-        color: blue;
-    }
-
-    #highScoresList {  
-        width: 80%;
-    }
-}

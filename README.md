@@ -70,6 +70,36 @@ The fonts used were bright and bold to emphazise the fun aspect of the game. The
 <img src="docs/wireframes/high_scores.webp" alt="High Scores Table Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_high_scores.webp" alt="High Scores Table Mobile" height="400px"><br><br><br><br>
 
 
+
+# Screenshots
+
+## Desktop User Login Page and Mobile User Login Page
+<img src="docs/screenshots/login_page_desktop.webp" alt="Desktop User Login " height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/screenshots/login_mobile.webp" alt="Mobile User Login Wireframe" height="400px"><br><br><br><br>
+
+## Game Rules Popup following Username Entry
+<img src="docs/screenshots/game_rules_desktop.webp" alt="Game Rules Login Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/screenshots/game_rules_mobile.webp" alt="Game Rules Login Mobile" height="400px"><br><br><br><br>
+
+## Game Page on Desktop and Mobile 
+<img src="docs/screenshots/game_desktop.webp" alt="Game Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/screenshots/game_mobile.webp" alt="Game Mobile" height="400px"><br><br><br><br>
+
+## Correct Answer on Desktop and Mobile 
+<img src="docs/screenshots/correct_desktop.webp" alt="Correct Answer Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/screenshots/correct_mobile.webp" alt="Correct Answer Mobile" height="400px"><br><br><br><br>
+
+## Incorrect Answer on Desktop and Mobile 
+<img src="docs/screenshots/wrong_desktop.webp" alt="Wrong Answer Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/screenshots/wrong_mobile.webp" alt="Wrong Answer Mobile" height="400px"><br><br><br><br>
+
+## Game Over Desktop and Mobile 
+<img src="docs/screenshots/game_over_desktop.webp" alt="Game Over Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/screenshots/game_over_mobile.webp" alt="Game Over Mobile" height="400px"><br><br><br><br>
+
+## Quit Game Desktop and Mobile 
+<img src="docs/screenshots/quit_desktop.webp" alt="Quit Game Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/screenshots/quit_mobile.webp" alt="Quit Game Mobile" height="400px"><br><br><br><br>
+
+## High Scores Desktop and Mobile 
+<img src="docs/screenshots/high_scores_desktop.webp" alt="High Scores Table Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/screenshots/high_scores_mobile.webp" alt="High Scores Table Mobile" height="400px"><br><br><br><br>
+
+
+
+
 ### Existing Features
 ## Features
 
@@ -139,10 +169,23 @@ body .swal2-height-auto {
 
 ### Validator Testing 
 
+### Login and Game Pages
+
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
-- CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
+  - No errors were returned when passing through the official ![W3C validator](docs/testing/w3c_html_validator.webp)
+
+- CSS (includes High Score list)
+  - No errors were found when passing through the official ![(Jigsaw) validator](docs/testing/w3c_css_validator.webp)
+
+- JavaScript
+  - No errors were found when passing through the official ![jshint validator](docs/testing/jshint_script.webp)
+
+  ### High Score List
+  - HTML
+    - No errors were returned when passing through the official ![W3C validator](docs/testing/w3c_html_validator.webp)
+  - JavaScript
+    - No errors were found when passing through the official ![jshint validator](docs/testing/jshint_high_scores.webp)
+
 
 ### Unfixed Bugs
 
@@ -170,12 +213,13 @@ You can break the credits section up into Content and Media, depending on what y
 
 - ![w3 schools](https://www.w3schools.com/js/DEFAULT.asp) was utilized for some of the JavaScript funtionality.
 - I have previous experience utilizing Sweet Alert, however I did still need to refer to ![Sweet Alert Guidance](https://sweetalert.js.org/) to refresh myself.
-- The images used were downloaded from 
+
 
 ### Media
 
 - The character images used for the game were taken from ![Download Cartoon Free PNG photo images and clipart](https://freepngimg.com/cartoon)
-- The images used for the mobile, tablet and desktop backgrounds were taken from ![Wallpapercrafter](https://wallpapercrafter.com/1777017-sonic-sonic-generations-generations-sonic-the-hedgehog.html#google_vignette)
+- The images used for the mobile, tablet and desktop backgrounds were taken from ![Wallpapercrafter](https://wallpapercrafter.com/1777017-sonic-sonic-generations-generations-sonic-the-hedgehog.html#google_vignette).
+ The image used on the 404 page was downloaded from ![Freepik] (https://www.freepik.com/free-vector/watercolor-summer-background_43433322.htm#query=summer%20holiday%20cartoon&position=1&from_view=keyword&track=ais&uuid=97abd852-0132-412c-b3fc-021562497a97)
 
 
 

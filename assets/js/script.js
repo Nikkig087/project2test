@@ -8,15 +8,12 @@ let lifes = 2;
 let correctAnswers = 0;
 let username;
 let currentCharacter;
-let previousCharacter;
 
 
-
-
-
-function goToIndex() {
-    window.location.href = "index.html";
-}
+/**
+ * The following function provides the user with a Character Image and options for the player to guess who the Character is.
+ * Each Character is displayed only once during the game.
+ */
 
 const characters = [
     { name: "Bart", image: "bart.webp"},
@@ -76,7 +73,11 @@ function displayCharacter() {
     }
 }
 
-
+/**
+ * When the user submits their name using the username form, the game is initialized using the below function.
+ * Game rules are shown via a Sweet Alert popup to the User before the game screen is fully visable to the User.
+ * @param {Event} event - The submit event triggered by the username form.
+ */
 function startGame(event) {
     event.preventDefault(); 
      username = document.getElementById("usernameInput").value.trim();
@@ -117,6 +118,11 @@ function startGame(event) {
     }
 }
 
+/**
+ * The below function checks if the Users guess is correct.  
+ * It checks this by comparing the selected guess with the correct answer and then provides a visual update to the User accordingly.
+ */
+
 function checkGuess() {
     const guess = document.querySelector('input[name="character"]:checked');
     const message = document.getElementById("message");
@@ -148,6 +154,16 @@ function checkGuess() {
  
     document.getElementById("correctAnswers").textContent = `Correct answers: ${correctAnswers}`;
 }
+
+/**
+ * The following function handles the end of the game.
+ * The High scores are updated and a Sweet Alert Popup is shown to the User to ask them if they want to play again or not.
+ * Hides the game area including the User logged in area if the user chooses to not to play again.  
+ * The game is reset and the Username form is displayed to the User.
+ * If the user chooses to play again, the game state is reset.
+ * 
+ */
+
 function gameOver() {
     username = document.getElementById("usernameInput").value.trim();
     const capitalizedUsername = username.charAt(0).toUpperCase() + username.slice(1);
@@ -206,6 +222,14 @@ function gameOver() {
     });
 }
 
+/**
+ * The below function handles the player choosing to quit the game.
+ * It asks the User for confirmation that they wish to quit.
+ * Hides the game area including the User loged in area if the user chooses to quit.  
+ * The game is reset and the Username form is displayed to the User.
+ * If the user chooses not to quit, the game continues.
+ * 
+ */
 
 function quitGame() {
     username = document.getElementById("usernameInput").value.trim();
@@ -251,31 +275,53 @@ function quitGame() {
     
 // Event listeners
 
+/**
+ * The event.preventDefault() function in this event listener prevents the default form submission behavior, such as page to reload or navigate to another URL.
+ * The checkGuess function is invoked allowing the form submission to be handled.
+ * It checks the player's guess and updates the game state accordingly. 
+ */
 document.getElementById("guessForm").addEventListener("submit", function(event) {
     event.preventDefault();
     checkGuess();
 });
 
-
-
-
+/** This event listener sets the checked state of the radio button when its corresponding label is clicked (Option A).
+*/
 document.getElementById("labelA").addEventListener("click", function() {
     document.getElementById("guessA").checked = true;
 });
 
+
+/** 
+ * This event listener sets the checked state of the radio button when its corresponding label is clicked (Option B).
+*/
 document.getElementById("labelB").addEventListener("click", function() {
     document.getElementById("guessB").checked = true;
 });
 
+
+/** 
+ * This event listener sets the checked state of the radio button when its corresponding label is clicked (Option C).
+*/
 document.getElementById("labelC").addEventListener("click", function() {
     document.getElementById("guessC").checked = true;
 });
 
+
+/**
+ * This event listener listens for a click event on an element with the ID "quitGame" and then calls the quitGame function.
+ */
 document.getElementById("quitGame").addEventListener("click", quitGame);
 
+/**
+ * This event listener listens for a submit event on an element with the ID "usernameForm"  when that event occurs, it triggers the startGame function.
+ */
 document.getElementById("usernameForm").addEventListener("submit", startGame);
 
 //onload function
+/**
+ * When the window loads, the gameContainer is intially hidden.
+ */
 window.onload = function() {
     document.getElementById("gameContainer").classList.add("hidden");
 };
