@@ -97,6 +97,8 @@ The fonts used were bright and bold to emphazise the fun aspect of the game. The
 ## High Scores Desktop and Mobile 
 <img src="docs/screenshots/high_scores_desktop.webp" alt="High Scores Table Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/screenshots/high_scores_mobile.webp" alt="High Scores Table Mobile" height="400px"><br><br><br><br>
 
+## 404 Desktop and Mobile 
+<img src="docs/screenshots/404_desktop.webp" alt="404 Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/screenshots/404_mobile.webp" alt="404 Mobile" height="400px"><br><br><br><br>
 
 
 
@@ -136,18 +138,21 @@ The fonts used were bright and bold to emphazise the fun aspect of the game. The
 
 ### Challenges
 
-Character Repetition: Initially, there was an issue where characters could repeat consecutively, affecting the game's randomness. However, I was able to resolve this by looping through the selection process until a different character is picked. Once a new character is selected, its image is displayed, and its name is stored as the current character. This prevents repetition and ensures a fresh character is always shown.
+#### Character Repetition: 
+ - Initially, there was an issue where characters could repeat consecutively, affecting the game's randomness. However, I was able to resolve this by looping through the selection process until a different character is picked. Once a new character is selected, its image is displayed, and its name is stored as the current character. This prevents repetition and ensures a fresh character is always shown.
 
 ![New Character Loop](docs/images/new_character_loop.webp)
 
 
-Quit Button Functionality: Implementing the quit button to return to the login screen was a challenge initially. However, thorough testing and debugging resolved this issue, and now the quit button function resets all relevant game variables and UI elements to their initial states, effectively restarting the game.
+#### Quit Button Functionality: 
+  - Implementing the quit button to return to the login screen was a challenge initially. However, thorough testing and debugging resolved this issue, and now the quit button function resets all relevant game variables and UI elements to their initial states, effectively restarting the game.
 
 
 ![Quit Game Functionality](docs/images/quit_function.webp)
 
 
-Sweet Alert functionality in Script.js: The following element detailed on https://cdn.jsdelivr.net/npm/sweetalert2@11: 
+#### Sweet Alert functionality in Script.js: 
+  - The following element detailed on https://cdn.jsdelivr.net/npm/sweetalert2@11: 
 
 body.swal2-height-auto {
     height: auto !important;
@@ -205,10 +210,6 @@ The live link can be found here - https://code-institute-org.github.io/love-runn
 
 ## Credits 
 
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-
-You can break the credits section up into Content and Media, depending on what you have included in your project. 
-
 ### Content 
 
 - ![w3 schools](https://www.w3schools.com/js/DEFAULT.asp) was utilized for some of the JavaScript funtionality.
@@ -223,20 +224,3 @@ You can break the credits section up into Content and Media, depending on what y
 
 
 
-
-## Other General Project Advice
-
-Below you will find a couple of extra tips that may be helpful when completing your project. Remember that each of these projects will become part of your final portfolio so it’s important to allow enough time to showcase your best work! 
-
-- One of the most basic elements of keeping a healthy commit history is with the commit message. When getting started with your project, read through [this article](https://chris.beams.io/posts/git-commit/) by Chris Beams on How to Write  a Git Commit Message 
-  - Make sure to keep the messages in the imperative mood 
-
-- When naming the files in your project directory, make sure to consider meaningful naming of files, point to specific names and sections of content.
-  - For example, instead of naming an image used ‘image1.png’ consider naming it ‘landing_page_img.png’. This will ensure that there are clear file paths kept. 
-
-- Do some extra research on good and bad coding practices, there are a handful of useful articles to read, consider reviewing the following list when getting started:
-  - [Writing Your Best Code](https://learn.shayhowe.com/html-css/writing-your-best-code/)
-  - [HTML & CSS Coding Best Practices](https://medium.com/@inceptiondj.info/html-css-coding-best-practice-fadb9870a00f)
-  - [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html#General)
-
-Getting started with your Portfolio Projects can be daunting, planning your project can make it a lot easier to tackle, take small steps to reach the final outcome and enjoy the process! 
