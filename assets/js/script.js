@@ -37,7 +37,7 @@ let guessedCharacters = [];
 
 function displayCharacter() {
     if (guessedCharacters.length === characters.length) {
-        gameOver(); // All characters have been guessed, end the game
+        gameOver(); 
         return;
     }
 
@@ -51,7 +51,7 @@ function displayCharacter() {
     document.getElementById("characterImg").src = "assets/images/" + newCharacter.image;
     currentCharacter = newCharacter.name;
 
-    const options = [newCharacter.name]; // Add the correct answer
+    const options = [newCharacter.name]; 
 
     const incorrectCharacters = characters.filter(character => character !== newCharacter);
 
@@ -62,7 +62,7 @@ function displayCharacter() {
         }
     }
 
-    options.sort(() => Math.random() - 0.5); // Shuffle options
+    options.sort(() => Math.random() - 0.5); 
 
     for (let i = 0; i < 3; i++) {
         const radioBtn = document.getElementById(`guess${String.fromCharCode(65 + i)}`);
@@ -88,12 +88,8 @@ function startGame(event) {
             html: `${capitalizedUsername} for each Character Image to guess you have two lifes. <br>Loose all your life's for that guess and its Game Over!!!`,
             icon: 'info',
             confirmButtonText: 'Lets Go!!!',
-            width: '600px', // Adjust the width as needed
-            padding: '1em', // Adjust the padding as needed
-          
-           
-            
-           
+            width: '600px', 
+            padding: '1em',         
           });
         document.getElementById("loggedInUser").textContent = `Logged in as: ${username}`;
         document.getElementById("usernameForm").classList.add("hidden");
@@ -192,17 +188,15 @@ function gameOver() {
         cancelButtonText: 'No'
     }).then((result) => {
         if (result.isConfirmed) {
-            // Reset game state
             guessedCharacters = [];
             correctAnswers = 0;
             lifes = 2;
-            document.getElementById("correctAnswers").textContent = ""; // Clear correct answers display
+            document.getElementById("correctAnswers").textContent = ""; 
             document.getElementById("message").textContent = "";
             document.getElementById("attempts").textContent = "";
             document.querySelectorAll('input[name="character"]').forEach(input => input.checked = false);
             displayCharacter(); 
         } else {
-            // Reset game state and return to initial state
             guessedCharacters = [];
             correctAnswers = 0; 
             lifes =2;
@@ -244,10 +238,8 @@ function quitGame() {
     }).then((result) => {
         if (result.isConfirmed) {
             
-            lifes = 2; // 
+            lifes = 2; 
             correctAnswers = 0;
-           
-            
             document.getElementById("message").textContent = "";
             document.getElementById("attempts").textContent = "";
             document.getElementById("correctAnswers").textContent = ""; 

@@ -177,7 +177,7 @@ body .swal2-height-auto {
 ### Login and Game Pages
 
 - HTML
-  - No errors were returned when passing through the official W3C Validator ![W3C validator](docs/testing/w3c_html_validator.webp)
+  - No errors were returned when passing through the official W3C Validator ![W3C validator](docs/testing/w3c_html_index.webp)
 
 - CSS (includes High Score list)
   No errors were found when passing through the official Jigsaw W3C CSS Validator. ![(Jigsaw) validator](docs/testing/w3c_css_validator.webp)
@@ -193,7 +193,7 @@ body .swal2-height-auto {
 
   ### High Score List Page
   - HTML
-    - No errors were returned when passing through the official W3C Validator ![W3C validator](docs/testing/w3c_html_validator.webp)
+    - No errors were returned when passing through the official W3C Validator ![W3C validator](docs/testing/w3c_html_index.webp)
 
   - JavaScript
     - No errors were found when passing through the official JShint ![jshint validator](docs/testing/jshint_high_scores.webp)
