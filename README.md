@@ -230,26 +230,26 @@ body .swal2-height-auto {
   - No errors were returned when passing through the official W3C Validator ![W3C validator](docs/testing/w3c_html_index.webp)
 
 - CSS (includes High Score list)
-  No errors were found when passing through the official Jigsaw W3C CSS Validator. ![(Jigsaw) validator](docs/testing/w3c_css_validator.webp)
+  - No errors were found when passing through the official (Jigsaw) Validator ![(Jigsaw) validator](docs/testing/w3c_css_validator.webp)
 
 - JavaScript
-  - No errors were found when passing through the official ![jshint validator](docs/testing/jshint_script.webp)
+  - No errors were found when passing through the official jshint Validator ![jshint validator](docs/testing/jshint_script.webp)
 
 - Lighthouse and Performance Testing
   - No errors were found when passing through the official Lighthouse testing <img src="docs/testing/lighthouse_desktop.webp" alt="Lighthouse Desktop Testing" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/testing/lighthouse_mobile.webp" alt="Lighthouse Mobile Testing" height="400px">
 
 - WCAG Testing on Login and Game Pages
-  - No errors were found when passing through the official Lighthouse testing <img src="docs/testing/wcag_login.webp" alt="WCAG Login Page Testing" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/testing/wcag_game.webp" alt="WCAG Game Page Testing" height="400px">
+  - No errors were found when passing through the official WCAG testing <img src="docs/testing/wcag_login.webp" alt="WCAG Login Page Testing" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/testing/wcag_game.webp" alt="WCAG Game Page Testing" height="400px">
 
   ### High Score List Page
   - HTML
-    - No errors were returned when passing through the official W3C Validator ![W3C validator](docs/testing/w3c_html_index.webp)
+    - No errors were returned when passing through the official W3C Validator ![W3C validator](docs/testing/w3c_html_high_scores.webp)
 
   - JavaScript
-    - No errors were found when passing through the official JShint ![jshint validator](docs/testing/jshint_high_scores.webp)
+    - No errors were found when passing through the official jshint validator ![jshint validator](docs/testing/jshint_high_scores.webp)
 
   - WCAG Testing on High Scores Page
-    - No errors were found when passing through the official Lighthouse testing ![wcag](docs/testing/wcag_high_score.webp)
+    - No errors were found when passing through the official WCAG testing ![wcag testing](docs/testing/wcag_high_score.webp)
 
 
 ## Unfixed Bugs
