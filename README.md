@@ -1,3 +1,54 @@
+1. [Introduction](#who-am-i)
+2. [User Stories](#user-stories)
+    1. [First Time User Goals](#first-time-user-goals)
+    2. [Returning User Goals](#returning-user-goals)
+    3. [Frequent User Goals](#frequent-user-goals)
+3. [Features](#features)
+    1. [The Colour Scheme](#the-colour-scheme)
+    2. [The Fonts Used](#the-fonts-used)
+4. [Wireframes](#wireframes)
+    1. [Desktop User Login Page and Mobile User Login Page Wireframe](#desktop-user-login-page-and-mobile-user-login-page-wireframe)
+    2. [Game Rules Popup following Username Entry](#game-rules-popup-following-username-entry-wireframe)
+	  3. [Game Page on Desktop and Mobile](#game-page-on-desktop-and-mobile-wireframe)
+	  4. [Correct Answer on Desktop and Mobile](#correct-answer-on-desktop-and-mobile-wireframe)
+	  5. [Incorrect Answer on Desktop and Mobile](#incorrect-answer-on-desktop-and-mobile-wireframe)
+	  6. [Game Over Desktop and Mobile](#game-over-on-desktop-and-mobile-wireframe)
+	  7. [Quit Game Desktop and Mobile](#quit-game-on-desktop-and-mobile-wireframe)
+	  8. [High Scores Desktop and Mobile](#High-scores-on-desktop-and-mobile-wireframe)
+5. 	[Screenshots](#screenshots)
+	1. [Desktop User Login Page and Mobile User Login Page Screenshot](#desktop-user-login-page-and-mobile-user-login-page-screenshot)
+	2. [Game Rules Popup following Username Entry Screenshot](#game-rules-popup-following-username-entry-screenshot)
+	3. [Game Page on Desktop and Mobile Screenshot](#game-page-on-desktop-and-mobile-screenshot)
+	4. [Correct Answer on Desktop and Mobile Screenshot](#correct-answer-on-desktop-and-mobile-screenshot)
+	5. [Incorrect Answer on Desktop and Mobile Screenshot](#incorrect-answer-on-desktop-and-mobile-screenshot)
+	6. [Game Over Desktop and Mobile Screenshot](#game-over-on-desktop-and-mobile-screenshot)
+	7. [Quit Game Desktop and Mobile Screenshot](#quit-game-on-desktop-and-mobile-screenshot)
+	8. [High Scores Desktop and Mobile Screenshot](#404-desktop-and-mobile-screenshot)
+	9. [404 Desktop and Mobile Screenshot](#404-desktop-and-mobile-screenshot)
+6.	[Existing Features](#existing-features)
+    1. [Usage](#usage)
+7.	[Future Features](#future-features)
+	1. [Timer](#timer)
+    2. [Animation](#animation)	
+8. 	[Testing](#testing)
+    1. [Challenges](#challenges)
+        1. [Character Repetition](#character-repetition)
+	      2. [Quit Button Functionality](#quit-button-functionality)
+	      3. [Sweet Alert functionality in Script.js](#sweet-alert-functionality-in-script.js)
+	         1. [Image Before Code Update](#image-before-code-update)
+	          2. [Image After Code Update](#image-after-code-update))
+9. [Validator Testing](#validator-testing)
+	1. [Login and Game Pages](#login-and-game-pages)
+	2. [High Score List Page](#high-score-list-page)
+10. [Unfixed Bugs](#unfixed-bugs)	
+11. [Deployment](#deployment)
+12. [Credits](#credits)
+	1. [Content](#content)
+	2. [Media](#content)
+
+<br>
+<br>
+
 # Who Am I
 
 This interactive game challenges players to guess the names of various characters from classic animated series which may envoke some childhood memories. 
@@ -24,6 +75,7 @@ This interactive game challenges players to guess the names of various character
 - As a user, I want to be constantly challenged with new character sets or gameplay modes to keep the experience fresh and exciting.
 
 <br>
+
 # Features 
 
 ## The Colour Scheme
@@ -42,70 +94,68 @@ The fonts used were bright and bold to emphazise the fun aspect of the game. The
 
 
 
-## Wireframes
+# Wireframes
 
 
-## Desktop User Login Page and Mobile User Login Page
+## Desktop User Login Page and Mobile User Login Page Wireframe
 <img src="docs/wireframes/login_screen.webp" alt="Desktop User Login Wireframe" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_login.webp" alt="Mobile User Login Wireframe" height="400px"><br><br><br><br>
 
-## Game Rules Popup following Username Entry
+## Game Rules Popup following Username Entry Wireframe
 <img src="docs/wireframes/game_rules_login.webp" alt="Game Rules Login Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_login_rules.webp" alt="Game Rules Login Mobile" height="400px"><br><br><br><br>
 
-## Game Page on Desktop and Mobile 
+## Game Page on Desktop and Mobile Wireframe
 <img src="docs/wireframes/guess_game.webp" alt="Game Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_game.webp" alt="Game Mobile" height="400px"><br><br><br><br>
 
-## Correct Answer on Desktop and Mobile 
+## Correct Answer on Desktop and Mobile Wireframe 
 <img src="docs/wireframes/correct_answer.webp" alt="Correct Answer Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_correct_answer.webp" alt="Correct Answer Mobile" height="400px"><br><br><br><br>
 
-## Incorrect Answer on Desktop and Mobile 
+## Incorrect Answer on Desktop and Mobile Wireframe
 <img src="docs/wireframes/wrong_guess.webp" alt="Wrong Answer Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_wrong_guess.webp" alt="Wrong Answer Mobile" height="400px"><br><br><br><br>
 
-## Game Over Desktop and Mobile 
+## Game Over Desktop and Mobile Wireframe
 <img src="docs/wireframes/game_over.webp" alt="Game Over Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_game_over.webp" alt="Game Over Mobile" height="400px"><br><br><br><br>
 
-## Quit Game Desktop and Mobile 
+## Quit Game Desktop and Mobile Wireframe
 <img src="docs/wireframes/quit_game.webp" alt="Quit Game Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_quit.webp" alt="Quit Game Mobile" height="400px"><br><br><br><br>
 
-## High Scores Desktop and Mobile 
+## High Scores Desktop and Mobile Wireframe
 <img src="docs/wireframes/high_scores.webp" alt="High Scores Table Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/wireframes/mobile_high_scores.webp" alt="High Scores Table Mobile" height="400px"><br><br><br><br>
 
 
 
 # Screenshots
 
-## Desktop User Login Page and Mobile User Login Page
+## Desktop User Login Page and Mobile User Login Page Screenshot
 <img src="docs/screenshots/login_page_desktop.webp" alt="Desktop User Login " height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/screenshots/login_mobile.webp" alt="Mobile User Login Wireframe" height="400px"><br><br><br><br>
 
-## Game Rules Popup following Username Entry
+## Game Rules Popup following Username Entry Screenshot
 <img src="docs/screenshots/game_rules_desktop.webp" alt="Game Rules Login Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/screenshots/game_rules_mobile.webp" alt="Game Rules Login Mobile" height="400px"><br><br><br><br>
 
-## Game Page on Desktop and Mobile 
+## Game Page on Desktop and Mobile Screenshot
 <img src="docs/screenshots/game_desktop.webp" alt="Game Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/screenshots/game_mobile.webp" alt="Game Mobile" height="400px"><br><br><br><br>
 
-## Correct Answer on Desktop and Mobile 
+## Correct Answer on Desktop and Mobile Screenshot
 <img src="docs/screenshots/correct_desktop.webp" alt="Correct Answer Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/screenshots/correct_mobile.webp" alt="Correct Answer Mobile" height="400px"><br><br><br><br>
 
-## Incorrect Answer on Desktop and Mobile 
+## Incorrect Answer on Desktop and Mobile Screenshot
 <img src="docs/screenshots/wrong_desktop.webp" alt="Wrong Answer Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/screenshots/wrong_mobile.webp" alt="Wrong Answer Mobile" height="400px"><br><br><br><br>
 
-## Game Over Desktop and Mobile 
+## Game Over Desktop and Mobile Screenshot
 <img src="docs/screenshots/game_over_desktop.webp" alt="Game Over Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/screenshots/game_over_mobile.webp" alt="Game Over Mobile" height="400px"><br><br><br><br>
 
-## Quit Game Desktop and Mobile 
+## Quit Game Desktop and Mobile Screenshot
 <img src="docs/screenshots/quit_desktop.webp" alt="Quit Game Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/screenshots/quit_mobile.webp" alt="Quit Game Mobile" height="400px"><br><br><br><br>
 
-## High Scores Desktop and Mobile 
+## High Scores Desktop and Mobile Screenshot
 <img src="docs/screenshots/high_scores_desktop.webp" alt="High Scores Table Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/screenshots/high_scores_mobile.webp" alt="High Scores Table Mobile" height="400px"><br><br><br><br>
 
-## 404 Desktop and Mobile 
+## 404 Desktop and Mobile Screenshot
 <img src="docs/screenshots/404_desktop.webp" alt="404 Desktop" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/screenshots/404_mobile.webp" alt="404 Mobile" height="400px"><br><br><br><br>
 
 
 
-### Existing Features
-## Features
 
-### Existing Features
+# Existing Features
 
 - **Username Entry**: Featured prominently on the landing page, users are prompted to enter their username to begin the game.
   - This feature ensures personalized gameplay experience including personalized messages.
@@ -119,7 +169,7 @@ The fonts used were bright and bold to emphazise the fun aspect of the game. The
   - This feature provides users with a target to reach when playing the game, if the User quits the game their score is not recorded to the High Scores table.
 
 
-### Usage
+## Usage
 
 1. **Username Entry**: Users are required to enter their username in the designated input field.
 2. **Start Game**: After entering their username, users can click on the "Start Game" button to begin.
@@ -128,30 +178,30 @@ The fonts used were bright and bold to emphazise the fun aspect of the game. The
 5. **Game Progress**: Users are given two lives to begin with, each wrong guess for a single Character means a life is lost.  If the User guesses correctly for that Cartoon Character before they have lost all two lifes then the lifes are reset on the next image shown. They can continue guessing characters until they loose all their lives or correctly identify all characters or decide to quit the game.
 6. **High Scores**: Users can view the current Top Scores to see who they need to beat before they begin.  This adds an element of competiton to the game.  When a User correctly guess's all the Characters and finishes the game or looses their life's during game play, their Highest Score is recorded to the High Scores table on the high_scores.html page.
 
-### Future Features
+# Future Features
 
 - **Timer**: Introduce a timer feature to add an element of challenge and excitement to the gameplay.
 
 - **Animation**:  Add animations for character transitions and guessing feedback.
 
-## Testing 
+# Testing 
 
-### Challenges
+## Challenges
 
-#### Character Repetition: 
+### Character Repetition: 
  - Initially, there was an issue where characters could repeat consecutively, affecting the game's randomness. However, I was able to resolve this by looping through the selection process until a different character is picked. Once a new character is selected, its image is displayed, and its name is stored as the current character. This prevents repetition and ensures a fresh character is always shown.
 
 ![New Character Loop](docs/images/new_character_loop.webp)
 
 
-#### Quit Button Functionality: 
+### Quit Button Functionality: 
   - Implementing the quit button to return to the login screen was a challenge initially. However, thorough testing and debugging resolved this issue, and now the quit button function resets all relevant game variables and UI elements to their initial states, effectively restarting the game.
 
 
 ![Quit Game Functionality](docs/images/quit_function.webp)
 
 
-#### Sweet Alert functionality in Script.js: 
+### Sweet Alert functionality in Script.js: 
   - The following element detailed on https://cdn.jsdelivr.net/npm/sweetalert2@11: 
 
 body.swal2-height-auto {
@@ -172,7 +222,7 @@ body .swal2-height-auto {
 #### Image After Code Update
 ![image after code update](docs/screenshots/game_over_desktop.webp)
 
-### Validator Testing 
+## Validator Testing 
 
 ### Login and Game Pages
 
@@ -202,13 +252,11 @@ body .swal2-height-auto {
     - No errors were found when passing through the official Lighthouse testing ![wcag](docs/testing/wcag_high_score.webp)
 
 
-### Unfixed Bugs
+## Unfixed Bugs
 
 There are no known bugs in the application.
 
 ## Deployment
-
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
   - In the GitHub repository, navigate to the Settings tab 
@@ -228,9 +276,9 @@ The live link can be found here - https://nikkig087.github.io/project2test/
 
 ### Media
 
-- The character images used for the game were taken from ![Download Cartoon Free PNG photo images and clipart](https://freepngimg.com/cartoon)
-- The images used for the mobile, tablet and desktop backgrounds were taken from ![Wallpapercrafter](https://wallpapercrafter.com/1777017-sonic-sonic-generations-generations-sonic-the-hedgehog.html#google_vignette).
- The image used on the 404 page was downloaded from ![Freepik] (https://www.freepik.com/free-vector/watercolor-summer-background_43433322.htm#query=summer%20holiday%20cartoon&position=1&from_view=keyword&track=ais&uuid=97abd852-0132-412c-b3fc-021562497a97)
+- The character images used for the game were taken from [Download Cartoon Free PNG photo images and clipart](https://freepngimg.com/cartoon)
+- The images used for the mobile, tablet and desktop backgrounds were taken from [Wallpapercrafter](https://wallpapercrafter.com/1777017-sonic-sonic-generations-generations-sonic-the-hedgehog.html#google_vignette).
+- The image used on the 404 page was downloaded from [Freepik](https://www.freepik.com/free-vector/watercolor-summer-background_43433322.htm#query=summer%20holiday%20cartoon&position=1&from_view=keyword&track=ais&uuid=97abd852-0132-412c-b3fc-021562497a97)
 
 
 
