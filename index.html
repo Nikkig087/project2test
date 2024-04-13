@@ -27,51 +27,68 @@
 
         <!-- Login Container -->
         <div id="loginContainer" class="container">
-            <div class="header" id="header">
-               
-                <h1> Welcome</h1>
-            </div>
-            <div class="loginContainer">
-                <form id="usernameForm" class="form">
-                    <label for="usernameInput">Enter your username:</label>
-                    <input type="text" id="usernameInput" placeholder="Username" required>
-                    <button type="submit">Start Game</button>
-                    <button onclick="location.href='high_scores.html';">View High Scores</button>
-                </form>
-
-            </div>
-        </div>
-
-          <!-- Game Container -->
-        <div id="gameContainer" class="gameContainer">
-            <div class="header hidden" id="gameHead">
-                <h1>Who Am I??</h1>
-            </div>
-            <div id="loggedInUser" class="user-info hidden"></div>
-                <div id="gameArea" class="hidden">
-                    <img id="characterImg" src="assets/images/default_image.webp" alt="Character Image">
-                    <form id="guessForm" class="guessform">
-                      <p>Select the character's name:</p>
-                    
-                        <input type="radio" id="guessA" name="character" value="">
-                        <label id="labelA" for="guessA"></label><br>
-                        
-                        <input type="radio" id="guessB" name="character" value="">
-                        <label id="labelB" for="guessB"></label><br>
-                        
-                        <input type="radio" id="guessC" name="character" value="">
-                        <label id="labelC" for="guessC"></label><br>
+            <!--Heading-->
+            <header>
+                <div class="header" id="header">
                 
-                        <div class="button-area">
-                            <button type="submit">Check</button>
-                            <button type="button" id="quitGame" class="hidden">Quit</button>
-                        </div>
-                </form>
-                <p id="message"></p>
-                <p id="attempts"></p>
-                <p id="correctAnswers"></p>
-            </div>
+                    <h1> Welcome</h1>
+                </div>
+            </header>
         </div>
+
+            <main>
+                <!--Username Form-->
+                <section>
+                    <div class="container">
+                        <form id="usernameForm" class="form">
+                            <label for="usernameInput">Enter your username:</label>
+                            <input type="text" id="usernameInput" placeholder="Username" required>
+                            <button type="submit">Start Game</button>
+                            <button onclick="location.href='high_scores.html';">View High Scores</button>
+                        </form>
+
+                    </div>
+                </section>
+      
+
+                <!-- Game Container -->
+                <section>
+                    <div id="gameContainer" class="gameContainer">
+                        <!--Heading-->
+                        <header>
+                        <div class="header hidden" id="gameHead">
+
+                            <h1>Who Am I??</h1>
+                        </div>
+                        </header>
+                        <div id="loggedInUser" class="user-info hidden"></div>
+                                <div id="gameArea" class="hidden">
+                                        <img id="characterImg" src="assets/images/default_image.webp" alt="Character Image">
+                                        <form id="guessForm" class="guessform">
+                                            <p>Select the character's name:</p>
+                                            
+                                                <input type="radio" id="guessA" name="character" value="">
+                                                <label id="labelA" for="guessA"></label><br>
+                                                
+                                                <input type="radio" id="guessB" name="character" value="">
+                                                <label id="labelB" for="guessB"></label><br>
+                                                
+                                                <input type="radio" id="guessC" name="character" value="">
+                                                <label id="labelC" for="guessC"></label><br>
+                                        
+                                                <div class="button-area">
+                                                    <button type="submit">Check</button>
+                                                    <button type="button" id="quitGame" class="hidden">Quit</button>
+                                                </div>
+                                        </form>
+                                        <p id="message"></p>
+                                        <p id="attempts"></p>
+                                        <p id="correctAnswers"></p>
+                                </div>
+                            </div>
+                    
+                </section>
+            </main>
     </div>
         <script src="assets/js/script.js"></script>
        
