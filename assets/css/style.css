@@ -17,6 +17,10 @@ html, body {
     height: 100%;
 }
 
+.hidden_heading{
+  display: none;
+}
+
 /* Style for high_scores.html page*/
 #topScoresForm {
     display: none;
