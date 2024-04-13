@@ -6,7 +6,7 @@ html, body {
     margin: 0;
     padding: 0;
 }
-#hol_container {
+.hol_container {
     text-align: center;
    
     padding: 20px;
