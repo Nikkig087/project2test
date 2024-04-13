@@ -13,12 +13,12 @@
     <link rel="preconnect icon" type="image/webp" sizes="32x32" href="assets/images/cartoon_32x32.webp">
     <link rel="preconnect icon" type="image/webp" sizes="16x16" href="assets/images/cartoon_16x16.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preload" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.gstatic.com" crossorigin as ="font">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" as="font">
 
-    <script rel="preload" src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script rel="preload" src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script rel="preload" src="assets/js/sweetalert2@11.js"></script>
-    <link rel="preload stylesheet" href="assets/css/style.css">
+    <link rel="preload stylesheet" href="assets/css/style.css" as="style">
     
    
 </head>
@@ -31,7 +31,7 @@
             <header>
                 <div class="header" id="header">
                 
-                    <h1> Welcome</h2>
+                    <h1> Welcome</h1>
                 </div>
             </header>
         </div>
@@ -39,7 +39,7 @@
             <main>
                 <!--Username Form-->
                 <section>
-                    <h1 class="hidden_heading">Username Form</h1>
+                    <h3 class="hidden_heading">Username Form</h3>
                     <div class="container">
                         <form id="usernameForm" class="form">
                             <label for="usernameInput">Enter your username:</label>
