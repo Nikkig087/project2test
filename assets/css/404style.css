@@ -15,12 +15,13 @@ h1{
     
      font-size: xx-large;
 }
+
+.hidden_heading{
+    display: none;
+  }
+  
 .hol_container {
     text-align: center;
-   
-   /* padding: 20px;
-    background-color: white;
-    width: 90%;*/
     margin: 50px auto;
    
     background-color: #F6C883;
