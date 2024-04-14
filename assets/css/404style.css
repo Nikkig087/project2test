@@ -6,12 +6,21 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+h1{
+    text-align: center;
+   
+    
+     color: blue;
+    
+     font-size: large;
+}
 .hol_container {
     text-align: center;
    
-    padding: 20px;
+   /* padding: 20px;
     background-color: white;
-    width: 90%;
+    width: 90%;*/
     margin: 50px auto;
    
     background-color: #F6C883;
