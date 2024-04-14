@@ -23,7 +23,7 @@
 	5. [Incorrect Answer on Desktop and Mobile Screenshot](#incorrect-answer-on-desktop-and-mobile-screenshot)
 	6. [Game Over Desktop and Mobile Screenshot](#game-over-on-desktop-and-mobile-screenshot)
 	7. [Quit Game Desktop and Mobile Screenshot](#quit-game-on-desktop-and-mobile-screenshot)
-	8. [High Scores Desktop and Mobile Screenshot](#404-desktop-and-mobile-screenshot)
+	8. [High Scores Desktop and Mobile Screenshot](#high-scores-desktop-and-mobile-screenshot)
 	9. [404 Desktop and Mobile Screenshot](#404-desktop-and-mobile-screenshot)
 6.	[Existing Features](#existing-features)
     1. [Usage](#usage)
