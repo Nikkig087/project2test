@@ -40,6 +40,7 @@
 9. [Validator Testing](#validator-testing)
 	1. [Login and Game Pages](#login-and-game-pages)
 	2. [High Score List Page](#high-score-list-page)
+  3. [404 Page](#404-page)
 10. [Unfixed Bugs](#unfixed-bugs)	
 11. [Deployment](#deployment)
 12. [Credits](#credits)
@@ -236,7 +237,7 @@ body .swal2-height-auto {
   - No errors were found when passing through the official jshint Validator ![jshint validator](docs/testing/jshint_script.webp)
 
 - Lighthouse and Performance Testing
-  - No errors were found when passing through the official Lighthouse testing <img src="docs/testing/lighthouse_desktop.webp" alt="Lighthouse Desktop Testing" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/testing/lighthouse_mobile.webp" alt="Lighthouse Mobile Testing" height="400px">
+  - No errors were found when passing through the official Lighthouse testing <img src="docs/testing/lighthouse_index_desktop.webp" alt="Lighthouse Index page Desktop Testing" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/testing/lighthouse_index_mobile.webp" alt="Lighthouse Index page Mobile Testing" height="400px">
 
 - WCAG Testing on Login and Game Pages
   - No errors were found when passing through the official WCAG testing <img src="docs/testing/wcag_login.webp" alt="WCAG Login Page Testing" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/testing/wcag_game.webp" alt="WCAG Game Page Testing" height="400px">
@@ -248,9 +249,24 @@ body .swal2-height-auto {
   - JavaScript
     - No errors were found when passing through the official jshint validator ![jshint validator](docs/testing/jshint_high_scores.webp)
 
-  - WCAG Testing on High Scores Page
-    - No errors were found when passing through the official WCAG testing ![wcag testing](docs/testing/wcag_high_score.webp)
+  - Lighthouse and Performance Testing
+    - No errors were found when passing through the official Lighthouse testing <img src="docs/testing/lighthouse_high_scores_desktop.webp" alt="Lighthouse High Scores Desktop Testing" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/testing/lighthouse_high_scores_mobile.webp" alt="Lighthouse High Scores Mobile Testing" height="400px">
 
+  - WCAG Testing on High Scores Page
+    - No errors were found when passing through the official WCAG testing ![wcag testing](docs/testing/wcag_high_scores.webp)
+
+  ### 404 page
+  - HTML
+    - No errors were returned when passing through the official W3C Validator ![W3C validator](docs/testing/w3c_html_404_page.webp)
+
+  - JavaScript
+    - No errors were found when passing through the official jshint validator ![jshint validator](docs/testing/jshint_script.webp)
+
+  - WCAG Testing on High Scores Page
+    - No errors were found when passing through the official WCAG testing ![wcag testing](docs/testing/wcag_404.webp)
+
+  - Lighthouse and Performance Testing
+    - No errors were found when passing through the official Lighthouse testing <img src="docs/testing/lighthouse_404_desktop.webp" alt="Lighthouse 404 Desktop Testing" height="400px"> &nbsp; &nbsp;&nbsp; &nbsp; <img src="docs/testing/lighthouse_404_mobile.webp" alt="Lighthouse 404 Mobile Testing" height="400px">
 
 ## Unfixed Bugs
 
