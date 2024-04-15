@@ -166,7 +166,7 @@ The fonts used were bright and bold to emphazise the fun aspect of the game. The
   - This feature enhances the user experience by offering clear instructions and feedback.
 - **Quit Button**: Users have the option to quit the game at any time by clicking the "Quit" button.
   - This feature provides users with flexibility and control over their gaming experience.
-  -**High Scores**: Users have the option to view the current High Scores by clicking the "High Scores" button.
+- **High Scores**: Users have the option to view the current High Scores by clicking the "High Scores" button.
   - This feature provides users with a target to reach when playing the game, if the User quits the game their score is not recorded to the High Scores table.
 
 
@@ -184,6 +184,10 @@ The fonts used were bright and bold to emphazise the fun aspect of the game. The
 - **Timer**: Introduce a timer feature to add an element of challenge and excitement to the gameplay.
 
 - **Animation**:  Add animations for character transitions and guessing feedback.
+
+- **Additional Characters**: Add more unknown Characters from the 60's or 70's maybe to the game and perform a Character review every 2 months to remove current Characters an update them with new Characters.
+
+- **Add difficulty levels**: Add the option to choose to play at a beginner, intermediate or advanced level.
 
 # Testing 
 
@@ -266,14 +270,14 @@ body .swal2-height-auto {
     <br>
 
   ### High Score List Page
-  - HTML
-    - No errors were returned when passing through the official W3C Validator ![W3C validator](docs/testing/w3c_html_high_scores.webp)
+- HTML
+  - No errors were returned when passing through the official W3C Validator ![W3C validator](docs/testing/w3c_html_high_scores.webp)
 
-  - JavaScript
-    - No errors were found when passing through the official jshint validator ![jshint validator](docs/testing/jshint_high_scores.webp)
+- JavaScript
+  - No errors were found when passing through the official jshint validator ![jshint validator](docs/testing/jshint_high_scores.webp)
 
-  - Lighthouse and Performance Testing
-    - No errors were found when passing through the official Lighthouse testing 
+- Lighthouse and Performance Testing
+  - No errors were found when passing through the official Lighthouse testing 
 
       Lighthouse Desktop Testing
 
@@ -287,25 +291,25 @@ body .swal2-height-auto {
   
       <br>
 
-  - WCAG Testing on High Scores Page
-    - No errors were found when passing through the official WCAG testing ![wcag testing](docs/testing/wcag_high_scores.webp)
+- WCAG Testing on High Scores Page
+   - No errors were found when passing through the official WCAG testing ![wcag testing](docs/testing/wcag_high_scores.webp)
 
   ### 404 page
-  - HTML
-    - No errors were returned when passing through the official W3C Validator ![W3C validator](docs/testing/w3c_html_404_page.webp)
+- HTML
+  - No errors were returned when passing through the official W3C Validator ![W3C validator](docs/testing/w3c_html_404_page.webp)
 
-  - JavaScript
-    - No errors were found when passing through the official jshint validator ![jshint validator](docs/testing/jshint_script.webp)
+- JavaScript
+  - No errors were found when passing through the official jshint validator ![jshint validator](docs/testing/jshint_script.webp)
 
-  - CSS (includes High Score list)
-    - No errors were found when passing through the official (Jigsaw) Validator ![(Jigsaw) validator](docs/testing/404_w3c_css_validator.webp)
+- CSS (includes High Score list)
+  - No errors were found when passing through the official (Jigsaw) Validator ![(Jigsaw) validator](docs/testing/404_w3c_css_validator.webp)
 
-  - WCAG Testing on High Scores Page
-    - No errors were found when passing through the official WCAG testing ![wcag testing](docs/testing/wcag_404.webp)
+- WCAG Testing on High Scores Page
+  - No errors were found when passing through the official WCAG testing ![wcag testing](docs/testing/wcag_404.webp)
     
     
-  - Lighthouse and Performance Testing
-    - No errors were found when passing through the official Lighthouse testing 
+- Lighthouse and Performance Testing
+  - No errors were found when passing through the official Lighthouse testing 
 
       Lighthouse Desktop Testing
 
