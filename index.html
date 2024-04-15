@@ -44,8 +44,8 @@
                         <form id="usernameForm" class="form">
                             <label for="usernameInput">Enter your username:</label>
                             <input type="text" id="usernameInput" placeholder="Username" required>
-                            <button type="submit">Start Game</button>
-                            <button onclick="location.href='high_scores.html';">View High Scores</button>
+                            <button aria-label="submit" type="submit">Start Game</button>
+                            <button aria-label="view high scores" onclick="location.href='high_scores.html';">View High Scores</button>
                         </form>
 
                     </div>
@@ -79,8 +79,8 @@
                                                 <label id="labelC" for="guessC"></label><br>
                                         
                                                 <div class="button-area">
-                                                    <button type="submit">Check</button>
-                                                    <button type="button" id="quitGame" class="hidden">Quit</button>
+                                                    <button aria-label="submit" type="submit">Check</button>
+                                                    <button aria-label="quit game" type="button" id="quitGame" class="hidden">Quit</button>
                                                 </div>
                                         </form>
                                         <p id="message"></p>
